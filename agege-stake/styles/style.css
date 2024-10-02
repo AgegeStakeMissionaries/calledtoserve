@@ -102,6 +102,16 @@ nav a:hover {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+.text-box{
+  color: #053862;
+  padding: 1rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.text-box h2{
+  text-decoration: underline;
+}
 .quotes h2, h3{
   text-align: center;
 }
@@ -139,9 +149,6 @@ transform: translateX(-100%);
   transform: scale(1.05);
 } */
 .missionaries_card {
-  color: #053862;
-  background: white;
-  border: 1px solid #ddd;
   border-radius: 5px;
   padding: 15px;
   margin: 10px;
@@ -151,8 +158,6 @@ transform: translateX(-100%);
 .missionaries_card:hover {
   transform: translateY(-5px);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  background-color: #053862;
-  color: #fff;
 }
 
 .missionariesAdd_card {

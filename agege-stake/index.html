@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="styles/style.css" />
 </head>
 
+
 <body>
     <!--HEADER STARTS-->
     <header>
@@ -49,8 +50,22 @@
         missionaries would be serving to all missionaries at Agege stake .</h3>
         <!-- <button onclick="alert('View Missionaries')">View Missionaries</button> -->
     </div>
+    <!-- Carousel images start -->
     <div class="img-carosel">
         <img src="image/group-photo.jpeg" alt="Group-Photograph" class="group-pic">
+        <img src="image/prep-class.jpeg" class="group-pic" alt="MissionPrep class">
+        <img src="image/images.jpeg" class="group-pic" alt="MissionPrep class">
+        <img src="image/russel.jpeg" class="group-pic" alt="MissionPrep class">
+        <figcaption>I want this to be a carosel image that would display differnt images(Victor can u help with that????)</figcaption>
+    </div>
+
+    <!-- Carouselimages end -->
+     <!-- Missionary quotes start -->
+      <div class="quotes">
+        <section class="hidden">
+        <h2>Doctrines & Covenants 4:2</h2>
+        <h3>Therefore, O ye that embark in the service of God, see that ye serve him with all your heart, might, mind and strenght, that ye may stand blameless before Godat the last day</h3>
+    </section>
     </div>
     <!--MISSIONARY CARD STARTS-->
     <section class="missionaries_list">
@@ -93,5 +108,20 @@
     <script src="https://danielvictor123.github.io/petraschoolsotta/Missionaries_Site/missionaries.js"></script>
     <!--JAVA SCRIPTS ENDS-->
 </body>
+<script>
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            console.log(entry);
+            if (entry.isIntersecting) {
+                entry.target.classList.add("show");
+            } else {
+                entry.target.classList.remove("show");
+            }
+        });
+    });
+
+    const hiddenElements = document.querySelectorAll(".hidden");
+    hiddenElements.forEach((el) => observer.observe(el));
+</script>
 
 </html>

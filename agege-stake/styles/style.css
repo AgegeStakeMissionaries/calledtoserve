@@ -81,15 +81,45 @@ nav a:hover {
 }
 .main_img h2 {
   font-size: 2.75em;
-  margin: 0;
+  margin: 0 auto;
   animation: fadeIn 1s ease-in;
 }
-.main_img h3{
+.main_img h3 {
   padding: 15px;
   color: #323b6e;
 }
-.group-pic{
+.group-pic {
   width: 100%;
+  height: 50%;
+}
+.quotes {
+  color: #053862;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.quotes h2, h3{
+  text-align: center;
+}
+.quotes:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  background-color: #053862;
+  color: #fff;
+}
+
+.hidden{
+opacity: 0;
+transition: all 2s;  
+transform: translateX(-100%);
+}
+.show{
+  opacity: 1;
+  transform: translateX(0);
 }
 /* .main_img button {
   background-color: #fff;

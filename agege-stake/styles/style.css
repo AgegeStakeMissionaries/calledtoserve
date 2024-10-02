@@ -75,15 +75,15 @@ nav a:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: center;
   position: relative;
   overflow: hidden;
+  padding: 20px;
 }
+
 .main_img h2 {
-  font-size: 2.75em;
-  margin: 0 auto;
   animation: fadeIn 1s ease-in;
 }
+
 .main_img h3 {
   padding: 15px;
   color: #323b6e;

@@ -1,127 +1,280 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Israel Oyeyemi, Israel Mobote, Victor D. Etuk" />
-    <meta name="description" content="Connecting Missionaries, Sharing Experience." />
+    <meta
+      name="author"
+      content="Israel Oyeyemi, Israel Mobote, Victor D. Etuk"
+    />
+    <meta
+      name="description"
+      content="Connecting Missionaries, Sharing Experience."
+    />
     <meta property="og:title" content="Agege Stake Missionaries" />
-    <meta property="og:image"
-        content="https://agegestakemissionaries.github.io/calledtoserve/images/group-photo.jpeg" />
-    <meta property="og:description"
-        content=" “Called to serve”- A community platform for missionaries of Agege stake to connect missionaries who just received their calls to share their respective mission places for others to see. And to bring awareness of when and where their fellow missionaries would be serving to all missionaries at Agege stake ." />
-    <meta property="og:url" content="https://agegestakemissionaries.github.io/calledtoserve/agege-stake/index.html" />
+    <meta
+      property="og:image"
+      content="https://agegestakemissionaries.github.io/calledtoserve/images/group-photo.jpeg"
+    />
+    <meta
+      property="og:description"
+      content=" “Called to serve”- A community platform for missionaries of Agege stake to connect missionaries who just received their calls to share their respective mission places for others to see. And to bring awareness of when and where their fellow missionaries would be serving to all missionaries at Agege stake ."
+    />
+    <meta
+      property="og:url"
+      content="https://agegestakemissionaries.github.io/calledtoserve/agege-stake/index.html"
+    />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="en_US.utf-8" />
     <meta property="og:site_name" content="Called To Serve" />
-    <link rel="shortcut icon" href="image/Designer.jpeg" type="image/x-icon">
-    <link rel="stylesheet" href="../normalize.css">
+    <link rel="shortcut icon" href="image/Designer.jpeg" type="image/x-icon" />
+    <link rel="stylesheet" href="../normalize.css" />
     <title>Agege Stake Missionaries</title>
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/style.css" />
-</head>
 
+    <!-- BOOTSTRAP CSS STARTS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <!-- BOOTSTRAP CSS ENDS -->
 
-<body>
+    <style>
+      .carousel-item img {
+        object-fit: cover;
+      }
+
+      .carousel-item img:hover {
+        cursor: pointer;
+      }
+
+      /*ANIMATION STARTS */
+      @keyframes spiralFadeIn {
+        0% {
+          transform: scale(0) rotate(0deg);
+          opacity: 0;
+        }
+        100% {
+          transform: scale(1) rotate(360deg);
+          opacity: 1;
+        }
+      }
+
+      .carousel-item {
+        animation: spiralFadeIn 1s ease-in-out; /* Apply animation */
+      }
+      /*ANIMATION ENDS */
+    </style>
+  </head>
+
+  <body>
     <!--HEADER STARTS-->
     <header>
-        <div class="head-div">
-            <img src="image/logo-2.jpeg" alt="Logo-img" class="logo-img">
-            <h1 class="called">Called</h1>
-            <h1>To</h1>
-            <h1 class="serve">Serve</h1>
-        </div>
-        <h2>Agege Stake Missionaries</h2>
-        <nav>
-            <a href="#" class="nav">Home</a>
-            <a href="#" class="nav">Missionaries</a>
-            <a href="#" class="nav">About</a>
-            <a href="#" class="nav">Contact</a>
-        </nav>
+      <div class="head-div">
+        <img src="image/logo-2.jpeg" alt="Logo-img" class="logo-img" />
+        <h1 class="called">Called</h1>
+        <h1>To</h1>
+        <h1 class="serve">Serve</h1>
+      </div>
+      <h2>Agege Stake Missionaries</h2>
+      <nav>
+        <a href="#" class="nav">Home</a>
+        <a href="#" class="nav">Missionaries</a>
+        <a href="#" class="nav">About</a>
+        <a href="#" class="nav">Contact</a>
+      </nav>
     </header>
 
     <!--HEADER ENDS-->
 
-    <div class="main_img">
-        <h2 style="color: #053862">CALLED TO SERVE!</h2>
-        <h3>“Called to serve”- A community platform for missionaries of Agege stake to connect missionaries who just received their
-        calls to share their respective mission places for others to see. And to bring awareness of when and where their fellow
-        missionaries would be serving to all missionaries at Agege stake .</h3>
-        <!-- <button onclick="alert('View Missionaries')">View Missionaries</button> -->
+    <!-- MAIN IMAGE BODY STARTS -->
+    <div class="main_img container">
+      <h2 style="color: #053862">CALLED TO SERVE!</h2>
+      <h3>
+        “Called to serve”- A community platform for missionaries of Agege stake
+        to connect missionaries who just received their calls to share their
+        respective mission places for others to see. And to bring awareness of
+        when and where their fellow missionaries would be serving to all
+        missionaries at Agege stake .
+      </h3>
+      <!-- <button onclick="alert('View Missionaries')">View Missionaries</button> -->
     </div>
-    <!-- Carousel images start -->
-    <div class="img-carosel">
-        <img src="image/group-photo.jpeg" alt="Group-Photograph" class="group-pic">
-        <img src="image/prep-class.jpeg" class="group-pic" alt="MissionPrep class">
-        <img src="image/images.jpeg" class="group-pic" alt="MissionPrep class">
-        <img src="image/russel.jpeg" class="group-pic" alt="MissionPrep class">
-        <figcaption>I want this to be a carosel image that would display differnt images(Victor can u help with that????)</figcaption>
-    </div>
+    <!-- MAIN IMAGE BODY ENDS -->
 
-    <!-- Carouselimages end -->
-     <!-- Missionary quotes start -->
-      <div class="quotes">
-        <section class="hidden">
-        <h2>Doctrines & Covenants 4:2</h2>
-        <h3>Therefore, O ye that embark in the service of God, see that ye serve him with all your heart, might, mind and strenght, that ye may stand blameless before Godat the last day</h3>
-    </section>
+    <!-- CAROUSEL IMAGES STARTS -->
+    <div
+      id="carouselExample"
+      class="carousel slide container"
+      data-ride="carousel"
+      data-interval="5000"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="image/group-photo.jpeg"
+            alt="Group-Photograph"
+            class="d-block w-100"
+            data-toggle="modal"
+            data-target="#imageModal"
+            onclick="setModalImage ('image/group-photo.jpeg')"
+          />
+        </div>
+
+        <div class="carousel-item">
+          <img
+            src="image/prep-class.jpeg"
+            class="group-pic"
+            alt="MissionPrep class"
+            data-toggle="modal"
+            data-target="#imageModal"
+            onclick="setModalImage ('image/prep-class.jpeg')"
+          />
+        </div>
+
+        <div class="carousel-item">
+          <img
+            src="image/images.jpeg"
+            class="group-pic"
+            alt="MissionPrep class"
+            data-toggle="modal"
+            data-target="#imageModal"
+            onclick="setModalImage ('image/images.jpeg')"
+          />
+        </div>
+
+        <div class="carousel-item">
+          <img
+            src="image/russel.jpeg"
+            class="group-pic"
+            alt="MissionPrep class"
+            data-toggle="modal"
+            data-target="#imageModal"
+            onclick="setModalImage ('image/russel.jpeg')"
+          />
+        </div>
+      </div>
+
+      <!-- NEXT AND PREVIOUS BUTTON STARTS -->
+      <a
+        href="#carouselExample"
+        role="button"
+        data-slide="prev"
+        class="carousel-control-prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+
+      <a
+        href="#carouselExample"
+        role="button"
+        data-slide="next"
+        class="carousel-control-next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+      <!-- NEXT AND PREVIOUS BUTTON ENDS -->
     </div>
+    <!-- CAROUSEL IMAGES ENDS -->
+
+    <!-- GALLERY MODAL STARTS -->
+    <div
+      class="modal fade"
+      id="imageModal"
+      aria-labelledby="imageModalLabel"
+      aria-hidden="true"
+      role="dialog"
+      tabindex="1"
+    >
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="imageModalLabel">Gallery View</h4>
+
+            <button
+              class="close"
+              type="button"
+              data-dismiss="modal"
+              aria-label="close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <div class="modal-body">
+            <img src="" alt="Images Modals" class="img-fluid" id="modalImage" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- GALLERY MODAL ENDS -->
+
+    <!-- Missionary quotes start -->
+    <div class="quotes container">
+      <section class="hidden container">
+        <h2>Doctrines & Covenants 4:2</h2>
+        <h3>
+          Therefore, O ye that embark in the service of God, see that ye serve
+          him with all your heart, might, mind and strenght, that ye may stand
+          blameless before Godat the last day
+        </h3>
+      </section>
+    </div>
+    <!-- Missionary quotes start -->
+
     <!--MISSIONARY CARD STARTS-->
     <section class="missionaries_list">
-        <div class="missionaries_card">
-            <h3>Israel Oyeyemi</h3>
-            <p>Age: 18</p>
-            <p>Depature Date: 31-10-2024</p>
-            <p>Return Date: Unknown</p>
-            <p>Mission: Nigeria Uyo Mission</p>
-        </div>
+      <div class="missionaries_card">
+        <h3>Israel Oyeyemi</h3>
+        <p>Age: 18</p>
+        <p>Depature Date: 31-10-2024</p>
+        <p>Return Date: Unknown</p>
+        <p>Mission: Nigeria Uyo Mission</p>
+      </div>
 
-        <div class="missionaries_card">
-            <h3>Victor D. Friday-Etuk</h3>
-            <p>Age: 18</p>
-            <p>Depature Date: 12-12-2024</p>
-            <p>Return Date: Unknown</p>
-            <p>Mission: Nigeria Calabar Mission</p>
-        </div>
+      <div class="missionaries_card">
+        <h3>Victor D. Friday-Etuk</h3>
+        <p>Age: 18</p>
+        <p>Depature Date: 12-12-2024</p>
+        <p>Return Date: Unknown</p>
+        <p>Mission: Nigeria Calabar Mission</p>
+      </div>
 
-        <div class="missionaries_card missionariesAdd_card" onclick="alert('Add a new missionary')">
-            <span class="missionariesAdd_icon">+</span>
-            <span>Add Missionary</span>
-        </div>
+      <div
+        class="missionaries_card missionariesAdd_card"
+        onclick="alert('Add a new missionary')"
+      >
+        <span class="missionariesAdd_icon">+</span>
+        <span>Add Missionary</span>
+      </div>
     </section>
     <!--MISSIONARY CARD ENDS-->
 
     <!--FOOTER STARTS-->
     <footer>
-        <p>Follow us on social media</p>
-        <p>
-            &copy; 2024 (LDS) Nigeria Lagos Agege Missionary Service
-            <br />
-            <br />
-            <span>Designed and Created by; Israel Oyeyemi & Victor D. Friday-Etuk</span>
-        </p>
+      <p>Follow us on social media</p>
+      <p>
+        &copy; 2024 (LDS) Nigeria Lagos Agege Missionary Service
+        <br />
+        <br />
+        <span
+          >Designed and Created by; Israel Oyeyemi & Victor D. Friday-Etuk</span
+        >
+      </p>
     </footer>
     <!--FOOTER ENDS-->
 
     <!--JAVA SCRIPTS STARTS-->
     <script src="https://danielvictor123.github.io/petraschoolsotta/Missionaries_Site/missionaries.js"></script>
+    <script src="/agege-stake/scripts/index.js"></script>
     <!--JAVA SCRIPTS ENDS-->
-</body>
-<script>
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-            console.log(entry);
-            if (entry.isIntersecting) {
-                entry.target.classList.add("show");
-            } else {
-                entry.target.classList.remove("show");
-            }
-        });
-    });
 
-    const hiddenElements = document.querySelectorAll(".hidden");
-    hiddenElements.forEach((el) => observer.observe(el));
-</script>
-
+    <!-- BOOTSTRAP JAVASCRIPT STARTS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- BOOTSTRAP JAVASCRIPT ENDS -->
+  </body>
 </html>

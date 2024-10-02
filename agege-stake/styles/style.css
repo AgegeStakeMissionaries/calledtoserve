@@ -5,39 +5,98 @@ body {
   background-color: #f4f4f4;
 }
 header {
-  background: #053862;
+  background-color: #062349;
   color: white;
   padding: 10px 20px;
   text-align: center;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  font-weight: 400;
+}
+.head-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+.logo-img {
+  width: 25%;
+  border-radius: 50%;
+  margin-right: 10px;
 }
 
+.called {
+  color: #7ebdff;
+}
+.serve {
+  color: #2682eb;
+}
+.h1-sub {
+  position: absolute;
+  top: 50px;
+  left: 85px;
+  color: #fff;
+}
+nav {
+  background-color: #14417c;
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.5s ease-out;
+  color: #ffffff;
+}
+nav a {
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0.5rem;
+  display: flex;
+  border-radius: var(--border-radius);
+  justify-content: center;
+  padding: 1rem;
+  cursor: pointer;
+  font-weight: 700;
+}
+nav a:hover {
+  background-color: #050505;
+  color: white;
+  font-weight: 700;
+}
 .nav {
   color: white;
-  margin: 0 10px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .main_img {
   background: url("hero-image.jpg") no-repeat center center/cover;
   height: 300px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: white;
   text-align: center;
   position: relative;
   overflow: hidden;
 }
 .main_img h2 {
-  font-size: 2.5em;
+  font-size: 2.75em;
   margin: 0;
   animation: fadeIn 1s ease-in;
 }
-.main_img button {
+.main_img h3{
+  padding: 15px;
+  color: #323b6e;
+}
+.group-pic{
+  width: 100%;
+}
+/* .main_img button {
   background-color: #fff;
   color: #053862;
   border: none;
   border-radius: 5px;
+  margin-top: 15px;
   padding: 10px 20px;
   font-size: 1.2em;
   cursor: pointer;
@@ -48,7 +107,7 @@ header {
   background-color: #053862;
   color: white;
   transform: scale(1.05);
-}
+} */
 .missionaries_card {
   color: #053862;
   background: white;
@@ -112,5 +171,15 @@ footer:hover {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
   }
 }

@@ -1,29 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="author"
-      content="Israel Oyeyemi, Israel Mobote, Victor D. Etuk"
-    />
-    <meta
-      name="description"
-      content="Connecting Missionaries, Sharing Experience."
-    />
+    <meta name="author" content="Israel Oyeyemi, Israel Mobote, Victor D. Etuk" />
+    <meta name="description" content="Connecting Missionaries, Sharing Experience." />
     <meta property="og:title" content="Agege Stake Missionaries" />
-    <meta
-      property="og:image"
-      content="https://agegestakemissionaries.github.io/calledtoserve/images/group-photo.jpeg"
-    />
-    <meta
-      property="og:description"
-      content=" “Called to serve”- A community platform for missionaries of Agege stake to connect missionaries who just received their calls to share their respective mission places for others to see. And to bring awareness of when and where their fellow missionaries would be serving to all missionaries at Agege stake ."
-    />
-    <meta
-      property="og:url"
-      content="https://agegestakemissionaries.github.io/calledtoserve/agege-stake/index.html"
-    />
+    <meta property="og:image"
+        content="https://agegestakemissionaries.github.io/calledtoserve/images/group-photo.jpeg" />
+    <meta property="og:description"
+        content=" “Called to serve”- A community platform for missionaries of Agege stake to connect missionaries who just received their calls to share their respective mission places for others to see. And to bring awareness of when and where their fellow missionaries would be serving to all missionaries at Agege stake ." />
+    <meta property="og:url" content="https://agegestakemissionaries.github.io/calledtoserve/agege-stake/index.html" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="en_US.utf-8" />
     <meta property="og:site_name" content="Called To Serve" />
@@ -32,43 +20,38 @@
     <title>Agege Stake Missionaries</title>
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/style.css" />
-
-    <!-- BOOTSTRAP CSS STARTS -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    />
-    <!-- BOOTSTRAP CSS ENDS -->
-
     <style>
-      .carousel-item img {
-        object-fit: cover;
-      }
-
-      .carousel-item img:hover {
-        cursor: pointer;
-      }
-
-      /*ANIMATION STARTS */
-      @keyframes spiralFadeIn {
-        0% {
-          transform: scale(0) rotate(0deg);
-          opacity: 0;
+        .carousel-item img {
+            object-fit: cover;
         }
-        100% {
-          transform: scale(1) rotate(360deg);
-          opacity: 1;
-        }
-      }
 
-      .carousel-item {
-        animation: spiralFadeIn 1s ease-in-out; /* Apply animation */
-      }
-      /*ANIMATION ENDS */
+        .carousel-item img:hover {
+            cursor: pointer;
+        }
+
+        /*ANIMATION STARTS */
+        @keyframes spiralFadeIn {
+            0% {
+                transform: scale(0) rotate(0deg);
+                opacity: 0;
+            }
+
+            100% {
+                transform: scale(1) rotate(360deg);
+                opacity: 1;
+            }
+        }
+
+        .carousel-item {
+            animation: spiralFadeIn 1s ease-in-out;
+            /* Apply animation */
+        }
+
+        /*ANIMATION ENDS */
     </style>
-  </head>
+</head>
 
-  <body>
+<body>
     <!--HEADER STARTS-->
     <header>
         <div class="head-div">
@@ -90,9 +73,11 @@
 
     <div class="main_img">
         <h2 style="color: #053862">CALLED TO SERVE!</h2>
-        <h3>“Called to serve”- A community platform for missionaries of Agege stake to connect missionaries who just received their
-        calls to share their respective mission places for others to see. And to bring awareness of when and where their fellow
-        missionaries would be serving to all missionaries at Agege stake .</h3>
+        <h3>“Called to serve”- A community platform for missionaries of Agege stake to connect missionaries who just
+            received their
+            calls to share their respective mission places for others to see. And to bring awareness of when and where
+            their fellow
+            missionaries would be serving to all missionaries at Agege stake .</h3>
         <!-- <button onclick="alert('View Missionaries')">View Missionaries</button> -->
     </div>
     <!-- Carousel images start -->
@@ -100,184 +85,298 @@
         <img src="image/group-photo.jpeg" alt="Group-Photograph" class="group-pic">
         <img src="image/prep-class.jpeg" class="group-pic" alt="MissionPrep class">
         <div class="prophets-quote">
-        <img src="image/russel.jpeg" class="group-pic" alt="MissionPrep class">
-        </div>  
+            <img src="image/russel.jpeg" class="group-pic" alt="MissionPrep class">
+        </div>
     </div>
     <!-- MAIN IMAGE BODY ENDS -->
 
-    <!-- CAROUSEL IMAGES STARTS -->
-    <div
-      id="carouselExample"
-      class="carousel slide container"
-      data-ride="carousel"
-      data-interval="5000"
-    >
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img
-            src="image/group-photo.jpeg"
-            alt="Group-Photograph"
-            class="d-block w-100"
-            data-toggle="modal"
-            data-target="#imageModal"
-            onclick="setModalImage ('image/group-photo.jpeg')"
-          />
-        </div>
-
-        <div class="carousel-item">
-          <img
-            src="image/prep-class.jpeg"
-            class="group-pic"
-            alt="MissionPrep class"
-            data-toggle="modal"
-            data-target="#imageModal"
-            onclick="setModalImage ('image/prep-class.jpeg')"
-          />
-        </div>
-
-        <div class="carousel-item">
-          <img
-            src="image/images.jpeg"
-            class="group-pic"
-            alt="MissionPrep class"
-            data-toggle="modal"
-            data-target="#imageModal"
-            onclick="setModalImage ('image/images.jpeg')"
-          />
-        </div>
-
-        <div class="carousel-item">
-          <img
-            src="image/russel.jpeg"
-            class="group-pic"
-            alt="MissionPrep class"
-            data-toggle="modal"
-            data-target="#imageModal"
-            onclick="setModalImage ('image/russel.jpeg')"
-          />
-        </div>
-      </div>
-
-      <!-- NEXT AND PREVIOUS BUTTON STARTS -->
-      <a
-        href="#carouselExample"
-        role="button"
-        data-slide="prev"
-        class="carousel-control-prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-
-      <a
-        href="#carouselExample"
-        role="button"
-        data-slide="next"
-        class="carousel-control-next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-      <!-- NEXT AND PREVIOUS BUTTON ENDS -->
-    </div>
-    <!-- CAROUSEL IMAGES ENDS -->
-
-    <!-- GALLERY MODAL STARTS -->
-    <div
-      class="modal fade"
-      id="imageModal"
-      aria-labelledby="imageModalLabel"
-      aria-hidden="true"
-      role="dialog"
-      tabindex="1"
-    >
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h4 class="modal-title" id="imageModalLabel">Gallery View</h4>
-
-            <button
-              class="close"
-              type="button"
-              data-dismiss="modal"
-              aria-label="close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-
-          <div class="modal-body">
-            <img src="" alt="Images Modals" class="img-fluid" id="modalImage" />
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- GALLERY MODAL ENDS -->
-
     <!-- Missionary quotes start -->
-    <div class="quotes container">
-      <section class="hidden container">
-        <h2>Doctrines & Covenants 4:2</h2>
-        <h3>
-          Therefore, O ye that embark in the service of God, see that ye serve
-          him with all your heart, might, mind and strenght, that ye may stand
-          blameless before Godat the last day
-        </h3>
-      </section>
+    <div class="quotes">
+        <section class="hidden">
+            <h2 id="scripture">Doctrines & Covenants 4:2</h2>
+            <h3 id="quoteText">
+                Therefore, O ye that embark in the service of God, see that ye serve
+                him with all your heart, might, mind and strenght, that ye may stand
+                blameless before God at the last day
+            </h3>
+        </section>
     </div>
     <!-- Missionary quotes start -->
 
     <!--MISSIONARY CARD STARTS-->
     <section class="missionaries_list">
-      <div class="missionaries_card">
-        <h3>Israel Oyeyemi</h3>
-        <p>Age: 18</p>
-        <p>Depature Date: 31-10-2024</p>
-        <p>Return Date: Unknown</p>
-        <p>Mission: Nigeria Uyo Mission</p>
-      </div>
+        <div class="missionaries_card">
+            <h3>Israel Oyeyemi</h3>
+            <p>Age: 18</p>
+            <p>Depature Date: 31-10-2024</p>
+            <p>Return Date: Unknown</p>
+            <p>Mission: Nigeria Uyo Mission</p>
+        </div>
+        <div class="missionaries_card">
+            <h3>Israel Oyeyemi</h3>
+            <p>Age: 18</p>
+            <p>Depature Date: 31-10-2024</p>
+            <p>Return Date: Unknown</p>
+            <p>Mission: Nigeria Uyo Mission</p>
+        </div>
+        <div class="missionaries_card">
+            <h3>Israel Oyeyemi</h3>
+            <p>Age: 18</p>
+            <p>Depature Date: 31-10-2024</p>
+            <p>Return Date: Unknown</p>
+            <p>Mission: Nigeria Uyo Mission</p>
+        </div>
 
-      <div class="missionaries_card">
-        <h3>Victor D. Friday-Etuk</h3>
-        <p>Age: 18</p>
-        <p>Depature Date: 12-12-2024</p>
-        <p>Return Date: Unknown</p>
-        <p>Mission: Nigeria Calabar Mission</p>
-      </div>
+        <div class="missionaries_card">
+            <h3>Victor D. Friday-Etuk</h3>
+            <p>Age: 18</p>
+            <p>Depature Date: 12-12-2024</p>
+            <p>Return Date: Unknown</p>
+            <p>Mission: Nigeria Calabar Mission</p>
+        </div>
+        <div class="missionaries_card">
+            <h3>Victor D. Friday-Etuk</h3>
+            <p>Age: 18</p>
+            <p>Depature Date: 12-12-2024</p>
+            <p>Return Date: Unknown</p>
+            <p>Mission: Nigeria Calabar Mission</p>
+        </div>
+        <div class="missionaries_card">
+            <h3>Victor D. Friday-Etuk</h3>
+            <p>Age: 18</p>
+            <p>Depature Date: 12-12-2024</p>
+            <p>Return Date: Unknown</p>
+            <p>Mission: Nigeria Calabar Mission</p>
+        </div>
+        <div class="missionaries_card">
+            <h3>Victor D. Friday-Etuk</h3>
+            <p>Age: 18</p>
+            <p>Depature Date: 12-12-2024</p>
+            <p>Return Date: Unknown</p>
+            <p>Mission: Nigeria Calabar Mission</p>
+        </div>
 
-      <div
-        class="missionaries_card missionariesAdd_card"
-        onclick="alert('Add a new missionary')"
-      >
-        <span class="missionariesAdd_icon">+</span>
-        <span>Add Missionary</span>
-      </div>
+        <div class="missionaries_card missionariesAdd_card" onclick="alert('Add a new missionary')">
+            <span class="missionariesAdd_icon">+</span>
+            <span>Add Missionary</span>
+        </div>
     </section>
     <!--MISSIONARY CARD ENDS-->
 
     <!--FOOTER STARTS-->
     <footer>
-      <p>Follow us on social media</p>
-      <p>
-        &copy; 2024 (LDS) Nigeria Lagos Agege Missionary Service
-        <br />
-        <br />
-        <span
-          >Designed and Created by; Israel Oyeyemi & Victor D. Friday-Etuk</span
-        >
-      </p>
+        <p>Follow us on social media</p>
+        <p>
+            &copy; 2024 (LDS) Nigeria Lagos Agege Missionary Service
+            <br />
+            <br />
+            <span>Designed and Created by; Israel Oyeyemi & Victor D. Friday-Etuk</span>
+        </p>
     </footer>
     <!--FOOTER ENDS-->
+    <!-- Scripts -->
+    <script>
+        const quotes = [
+            {
+                "scriptureOrAuthor": "D&C 4:4",
+                "quote": "For behold the field is white already to harvest...",
+                "color": "#FF5733"
+            },
+            {
+                "scriptureOrAuthor": "Matthew 28:19",
+                "quote": "Go ye therefore, and teach all nations...",
+                "color": "#C70039"
+            },
+            {
+                "scriptureOrAuthor": "Alma 29:9",
+                "quote": "I know that which the Lord hath commanded me...",
+                "color": "#900C3F"
+            },
+            {
+                "scriptureOrAuthor": "Dieter F. Uchtdorf",
+                "quote": "The Lord's love for His children is infinite...",
+                "color": "#581845"
+            },
+            {
+                "scriptureOrAuthor": "Mosiah 28:3",
+                "quote": "Now they were desirous that salvation should be declared...",
+                "color": "#FFC300"
+            },
+            {
+                "scriptureOrAuthor": "Russell M. Nelson",
+                "quote": "Every member of the Church is a missionary...",
+                "color": "#DAF7A6"
+            },
+            {
+                "scriptureOrAuthor": "Mark 16:15",
+                "quote": "And he said unto them, Go ye into all the world, and preach the gospel...",
+                "color": "#FF5733"
+            },
+            {
+                "scriptureOrAuthor": "D&C 18:15",
+                "quote": "And if it so be that you should labor all your days in crying repentance...",
+                "color": "#C70039"
+            },
+            {
+                "scriptureOrAuthor": "Henry B. Eyring",
+                "quote": "You can take courage and comfort in the Lord’s promise...",
+                "color": "#900C3F"
+            },
+            {
+                "scriptureOrAuthor": "D&C 88:81",
+                "quote": "Behold, I sent you out to testify and warn the people...",
+                "color": "#581845"
+            },
+            {
+                "scriptureOrAuthor": "Isaiah 52:7",
+                "quote": "How beautiful upon the mountains are the feet of him that bringeth good tidings...",
+                "color": "#FFC300"
+            },
+            {
+                "scriptureOrAuthor": "David A. Bednar",
+                "quote": "We invite all to come unto Christ through ordinances and covenants...",
+                "color": "#DAF7A6"
+            },
+            {
+                "scriptureOrAuthor": "2 Nephi 26:33",
+                "quote": "And he inviteth them all to come unto him and partake of his goodness...",
+                "color": "#FF5733"
+            },
+            {
+                "scriptureOrAuthor": "Jeffrey R. Holland",
+                "quote": "You have callings, both temporal and spiritual, to minister...",
+                "color": "#C70039"
+            },
+            {
+                "scriptureOrAuthor": "D&C 6:36",
+                "quote": "Look unto me in every thought; doubt not, fear not...",
+                "color": "#900C3F"
+            },
+            {
+                "scriptureOrAuthor": "Moroni 10:32",
+                "quote": "Yea, come unto Christ, and be perfected in him...",
+                "color": "#581845"
+            },
+            {
+                "scriptureOrAuthor": "Neil L. Andersen",
+                "quote": "The blessings of missionary work are abundant and beyond measure...",
+                "color": "#FFC300"
+            },
+            {
+                "scriptureOrAuthor": "3 Nephi 5:13",
+                "quote": "Behold, I am a disciple of Jesus Christ, the Son of God...",
+                "color": "#DAF7A6"
+            },
+            {
+                "scriptureOrAuthor": "Luke 10:2",
+                "quote": "The harvest truly is great, but the labourers are few...",
+                "color": "#FF5733"
+            },
+            {
+                "scriptureOrAuthor": "Thomas S. Monson",
+                "quote": "You are never alone in the work of salvation...",
+                "color": "#C70039"
+            },
+            {
+                "scriptureOrAuthor": "Alma 13:24",
+                "quote": "For angels are declaring it unto many at this time in our land...",
+                "color": "#900C3F"
+            },
+            {
+                "scriptureOrAuthor": "Spencer W. Kimball",
+                "quote": "No greater work exists than to bring souls to Christ...",
+                "color": "#581845"
+            },
+            {
+                "scriptureOrAuthor": "1 Peter 3:15",
+                "quote": "But sanctify the Lord God in your hearts: and be ready always to give an answer...",
+                "color": "#FFC300"
+            },
+            {
+                "scriptureOrAuthor": "Jacob 5:71",
+                "quote": "And the Lord of the vineyard said unto them: Go to, and labor in the vineyard...",
+                "color": "#DAF7A6"
+            },
+            {
+                "scriptureOrAuthor": "Elder Dallin H. Oaks",
+                "quote": "Missionary work isn’t just a program in the Church, it is what we are all about...",
+                "color": "#FF5733"
+            },
+            {
+                "scriptureOrAuthor": "Doctrine and Covenants 33:9",
+                "quote": "Open your mouths and they shall be filled, and you shall become even as Nephi of old...",
+                "color": "#C70039"
+            },
+            {
+                "scriptureOrAuthor": "2 Timothy 4:2",
+                "quote": "Preach the word; be instant in season, out of season...",
+                "color": "#900C3F"
+            },
+            {
+                "scriptureOrAuthor": "M. Russell Ballard",
+                "quote": "Missionary work isn’t about numbers, it’s about love...",
+                "color": "#581845"
+            },
+            {
+                "scriptureOrAuthor": "Helaman 5:12",
+                "quote": "And now, my sons, remember, remember that it is upon the rock of our Redeemer...",
+                "color": "#FFC300"
+            },
+            {
+                "scriptureOrAuthor": "D&C 64:33",
+                "quote": "Wherefore, be not weary in well-doing, for ye are laying the foundation of a great work...",
+                "color": "#DAF7A6"
+            },
+            {
+                "scriptureOrAuthor": "Romans 10:14",
+                "quote": "How then shall they call on him in whom they have not believed?...",
+                "color": "#FF5733"
+            },
+            {
+                "scriptureOrAuthor": "John 15:16",
+                "quote": "Ye have not chosen me, but I have chosen you, and ordained you...",
+                "color": "#C70039"
+            },
+            {
+                "scriptureOrAuthor": "Ezra Taft Benson",
+                "quote": "The Lord works from the inside out. The world works from the outside in...",
+                "color": "#900C3F"
+            },
+            {
+                "scriptureOrAuthor": "Doctrine and Covenants 123:12",
+                "quote": "For there are many yet on the earth among all sects, parties, and denominations...",
+                "color": "#581845"
+            },
+            {
+                "scriptureOrAuthor": "Amos 3:7",
+                "quote": "Surely the Lord GOD will do nothing, but he revealeth his secret unto his servants the prophets...",
+                "color": "#FFC300"
+            }
+        ]
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                console.log(entry);
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("show");
+                } else {
+                    entry.target.classList.remove("show");
+                }
+            });
+        });
 
-    <!--JAVA SCRIPTS STARTS-->
-    <script src="https://danielvictor123.github.io/petraschoolsotta/Missionaries_Site/missionaries.js"></script>
-    <script src="/agege-stake/scripts/index.js"></script>
-    <!--JAVA SCRIPTS ENDS-->
+        const hiddenElements = document.querySelectorAll(".hidden");
+        hiddenElements.forEach((el) => observer.observe(el));
 
-    <!-- BOOTSTRAP JAVASCRIPT STARTS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <!-- BOOTSTRAP JAVASCRIPT ENDS -->
-  </body>
+        function displayRandomQuotes() {
+            const randomIndex = Math.floor(Math.random() * quotes.length);
+            const randomQuote = quotes[randomIndex];
+            document.getElementById("scripture").innerHTML = randomQuote.scriptureOrAuthor;
+            document.getElementById("quoteText").innerHTML = randomQuote.quote;
+            document.querySelector(".quotes").style.backgroundColor = randomQuote.color;
+        }
+        setInterval(displayRandomQuotes, 12000);
+        window.onload = displayRandomQuotes
+    </script>
+</body>
+
 </html>

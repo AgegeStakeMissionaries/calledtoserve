@@ -36,6 +36,12 @@ const quotes = [
     backgroundColor: "#000",
   },
   {
+    scriptureOrAuthor: "Tosin Okunaiya",
+    quote: "Always be Intentional In no all you do...",
+    color: "#DAF7A6",
+    backgroundColor: "#000",
+  },
+  {
     scriptureOrAuthor: "Mark 16:15",
     quote:
       "And he said unto them, Go ye into all the world, and preach the gospel...",

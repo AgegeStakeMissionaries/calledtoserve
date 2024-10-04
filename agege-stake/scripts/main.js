@@ -37,7 +37,7 @@ const quotes = [
   },
   {
     scriptureOrAuthor: "Tosin Okunaiya",
-    quote: "Always be Intentional In no all you do...",
+    quote: "Always be Intentional In all you do...",
     color: "#DAF7A6",
     backgroundColor: "#000",
   },
@@ -257,5 +257,5 @@ function displayRandomQuotes() {
   document.querySelector("#scripture").style.color =
     randomQuote.backgroundColor;
 }
-setInterval(displayRandomQuotes, 12000);
+setInterval(displayRandomQuotes, 10000);
 window.onload = displayRandomQuotes;

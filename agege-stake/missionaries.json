@@ -31,12 +31,16 @@
     "name": "Elder Josiaih J. Kefas",
     "departureDate": "21-01-2025",
     "mission": "Nigeria Uyo Mission",
-    "image": "image/kefas-close-2.jpg"
+    "image": "image/kefas-close-2.jpg",
+        "memories": "./image/oyeyemi-etuk-kefas-2.jpg"
+
   },
   {
     "name": "Sister Favour Etuk",
     "departureDate": "27-03-2025",
     "mission": "Nigeria Abuja Mission",
-    "image": "image/favour-etuk.jpg"
+    "image": "image/favour-etuk.jpg",
+        "memories": "./image/victor-favour.jpg"
+
   }
 ]

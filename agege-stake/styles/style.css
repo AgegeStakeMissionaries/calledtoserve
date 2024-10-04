@@ -237,7 +237,7 @@ h3 {
   grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
   grid-gap: 2rem;
   margin: 1rem;
-  justify-content: space-evenly;
+  justify-content: center;
   padding: 15px;
   align-items: center;
   margin: 20px;

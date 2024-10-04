@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Merriweather&family=Poppins&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Merriweather&family=Poppins&display=swap"); */
 
 body {
   font-family: "Merriweather", serif;
@@ -81,7 +81,6 @@ nav a:hover {
 }
 
 .main_img {
-  /* background: url("hero-image.jpg") no-repeat center center/cover; */
   height: 300px;
   display: flex;
   flex-direction: column;
@@ -89,11 +88,12 @@ nav a:hover {
   justify-content: center;
   position: relative;
   overflow: hidden;
-  padding: 20px 20px 0 20px;
+  padding: 20px;
 }
 
 .main_img #drop {
   animation: fadeIn 1s ease-in;
+  padding: 20px;
   margin: 1rem;
   font-size: 35px;
 }

@@ -1,11 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&family=Poppins&display=swap");
+
 body {
-  font-family: "Arial", sans-serif;
+  font-family: "Merriweather", serif;
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
 }
 header {
   background-color: #062349;
+  font-family: "Poppins", sans-serif;
   color: white;
   padding: 10px 20px;
   text-align: center;
@@ -317,12 +320,12 @@ select:valid {
   border: 0;
   box-shadow: 0 0 1em rgb(0 0 0 / 0.3);
 }
-.modal h2{
+.modal h2 {
   font-size: 1.5rem;
   font-style: oblique;
   text-decoration: underline;
 }
-.memories{
+.memories {
   height: 50%;
   width: 100%;
   border: 2px solid black;

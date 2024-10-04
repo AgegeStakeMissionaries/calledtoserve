@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Merriweather", serif;
+  text-decoration: none;
 }
 body {
   font-family: "Merriweather", cursive;

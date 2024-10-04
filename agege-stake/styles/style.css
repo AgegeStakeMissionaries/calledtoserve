@@ -177,6 +177,7 @@ h3 {
 }
 .details {
   width: 95px;
+  padding: 20px;
   font-weight: 900;
 }
 .links {

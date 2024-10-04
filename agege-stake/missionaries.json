@@ -3,9 +3,9 @@
     "name": "Elder Desmond Alasa Ogboanoh",
     "departureDate": "15-04-2024",
     "mission": "Cape Verde Mission",
-    "image": "image/desmond-alasa.jpg",
+    "image":"image/ogoanoh.jpg",
     "gender": "him",
-    "memories": "image/desmond&victor.jpg"
+    "memories": "image/ogboanoh-2.jpg"
 
   },
   {
@@ -22,7 +22,7 @@
     "mission": "Nigeria Calabar Mission",
     "image": "./image/victor-d-etuk.jpg",
     "gender": "him",
-    "memories": "./image/victor-favour.jpg"
+    "memories": "image/trios.jpg"
   },
   {
     "name": "Sister Ayomide Ijitola",
@@ -39,7 +39,7 @@
     "mission": "Nigeria Uyo Mission",
     "gender": "him",
     "image": "image/kefas-close-2.jpg",
-    "memories": "./image/oyeyemi-etuk-kefas-2.jpg"
+    "memories": "image/oyeyemi-etuk-kefas-2.jpg"
 
   },
   {

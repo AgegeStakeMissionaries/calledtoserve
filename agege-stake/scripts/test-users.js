@@ -426,7 +426,7 @@ fetch("missionaries.json")
         
         <br>
 
-        We wish him goodluck as he proceeds on his journey and pray that the Holy Spirit becomes his constant companion at all times and in all places. 👋👋🙏🤝`; // Customize this line
+        We wish ${missionary.gender} goodluck as he proceeds on his journey and pray that the Holy Spirit becomes his constant companion at all times and in all places. 👋👋🙏🤝`; // Customize this line
         let imgBox = document.querySelector(".memories");
         imgBox.setAttribute("src", `${missionary.memories}`);
         modal.showModal();

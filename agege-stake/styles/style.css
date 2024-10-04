@@ -110,7 +110,6 @@ nav a:hover {
 }
 
 .main_img {
-  /* background: url("hero-image.jpg") no-repeat center center/cover; */
   height: 350px;
   display: flex;
   flex-direction: column;
@@ -197,7 +196,7 @@ h3 {
   color: #fff;
   font-size: 1.2em;
 }
-/* .profile {
+.profile {
   width: 250px;
   height: fit-content;
   margin: 20px 10px;
@@ -205,7 +204,7 @@ h3 {
 }
 .profile:hover {
   opacity: 0.9;
-} */
+}
 .details {
   width: 95px;
   font-weight: 900;
@@ -238,7 +237,7 @@ h3 {
   background-color: blue;
   color: #fff;
 }
-/* .missionaries_card {
+.missionaries_card {
   border-radius: 5px;
   background-color: #c9cacf;
   margin: 15px;
@@ -250,7 +249,7 @@ h3 {
   align-items: center;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.801);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-} */
+}
 
 .view {
   padding: 10px;
@@ -266,8 +265,8 @@ h3 {
 #scripture {
   text-decoration: underline;
 }
-/* .missionaries_list {
-  /* display: flex;
+.missionaries_list {
+  display: flex;
   flex-direction: column;
   flex-wrap: wrap;  
   display: grid;
@@ -278,7 +277,7 @@ h3 {
   padding: 15px;
   align-items: center;
   margin: 20px;
-} */
+}
 #editModal {
   color: #050505;
   background-color: #323b6e;

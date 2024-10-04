@@ -1,17 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Israel Oyeyemi, Israel Mobote, Victor D. Etuk" />
-    <meta name="description" content="Connecting Missionaries, Sharing Experience." />
+    <meta
+      name="author"
+      content="Israel Oyeyemi, Israel Mobote, Victor D. Etuk"
+    />
+    <meta
+      name="description"
+      content="Connecting Missionaries, Sharing Experience."
+    />
     <meta property="og:title" content="Agege Stake Missionaries" />
-    <meta property="og:image"
-        content="https://agegestakemissionaries.github.io/calledtoserve/images/group-photo.jpeg" />
-    <meta property="og:description"
-        content=" “Called to serve”- A community platform for missionaries of Agege stake to connect missionaries who just received their calls to share their respective mission places for others to see. And to bring awareness of when and where their fellow missionaries would be serving to all missionaries at Agege stake ." />
-    <meta property="og:url" content="https://agegestakemissionaries.github.io/calledtoserve/agege-stake/index.html" />
+    <meta
+      property="og:image"
+      content="https://agegestakemissionaries.github.io/calledtoserve/images/group-photo.jpeg"
+    />
+    <meta
+      property="og:description"
+      content=" “Called to serve”- A community platform for missionaries of Agege stake to connect missionaries who just received their calls to share their respective mission places for others to see. And to bring awareness of when and where their fellow missionaries would be serving to all missionaries at Agege stake ."
+    />
+    <meta
+      property="og:url"
+      content="https://agegestakemissionaries.github.io/calledtoserve/agege-stake/index.html"
+    />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="en_US.utf-8" />
     <meta property="og:site_name" content="Called To Serve" />
@@ -19,27 +31,47 @@
     <title>Agege Stake Missionaries</title>
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/style.css" />
+
+    <!-- BOOTSTRAP CSS STARTS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- BOOTSTRAP CSS ENDS -->
+
+    <!-- Icon Font Stylesheet -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
     <!-- <script src="scripts/test-users.js" defer></script> -->
     <script src="scripts/main.js" defer></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <!--HEADER STARTS-->
     <header>
-        <div class="head-div">
-            <img src="image/logo-2.jpeg" alt="Logo-img" class="logo-img">
-            <h1 class="called">Called</h1>
-            <h1>To</h1>
-            <h1 class="serve">Serve</h1>
-            <h1>💪</h1>
-        </div>
-        <h2>Agege Stake Missionary Hub</h2>
-        <a href="https://calledtoserve.vercel.app/agege-stake/index.html">calledtoserve.com</a>
-        <nav>
-            <a href="index.html" class="active">Home</a>
-            <a href="missionaries.html">Missionaries</a>
-            <a href="#">About</a>
-        </nav>
+      <div class="head-div">
+        <img src="image/logo-2.jpeg" alt="Logo-img" class="logo-img" />
+        <h1 class="called">Called</h1>
+        <h1>To</h1>
+        <h1 class="serve">Serve</h1>
+        <h1>💪</h1>
+      </div>
+      <h2>Agege Stake Missionary Hub</h2>
+      <a href="https://calledtoserve.vercel.app/agege-stake/index.html"
+        >calledtoserve.com</a
+      >
+      <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="missionaries.html">Missionaries</a>
+        <a href="#">About</a>
+      </nav>
     </header>
 
     <!--HEADER ENDS-->
@@ -157,54 +189,90 @@
                 <h3>Mission: Nigeria Abuja Mission</p>
             </div>
         </div>
+
+        <div class="d-flex justify-content-center">
+          <a href="missionaries.html">
+            <button class="view"><strong>See More</strong></button>
+          </a>
+
+          <a href="missionaries.html">
+            <button class="view"><strong>+ View All</strong></button>
+          </a>
+        </div>
+      </div>
     </section>
-    <a href="missionaries.html">
-        <button class="view"><strong>+ View All</strong></button>
-    </a>
-    <!-- <button id="addMissionary" class="view">Add Missionary</button> -->
+    <!-- MISSIONARIES CARD SECTION ENDS-->
 
     <!-- Edit Modal -->
-    <div id="editModal" style="display:none;">
-        <label for="editName">Name:</label>
-        <input required type="text" maxlength="25" id="editName" placeholder="Name">
-        <br>
-        <label for="editDeparture">Departure Date:</label>
-        <input required type="date" id="editDeparture" placeholder="Departure Date">
-        <br>
-        <label for="editReturn">Return Date:</label>
-        <input required type="date" id="editReturn" placeholder="Return Date">
-        <br>
-        <label for="editMission">Mission</label>
-        <input type="text" required id="editMission" placeholder="Mission">
-        <br>
-        <label for="editImage">Image:</label>
-        <input type="file" id="editImage" required>
-        <label for="previewImage">Image preview</label>
-        <img id="previewImage" src="image/download.png" class="profile" alt="Image Preview" style="display:none;">
-        <button id="closeModal">Close</button>
+    <div id="editModal" style="display: none">
+      <label for="editName">Name:</label>
+      <input
+        required
+        type="text"
+        maxlength="25"
+        id="editName"
+        placeholder="Name"
+      />
+      <br />
+      <label for="editDeparture">Departure Date:</label>
+      <input
+        required
+        type="date"
+        id="editDeparture"
+        placeholder="Departure Date"
+      />
+      <br />
+      <label for="editReturn">Return Date:</label>
+      <input required type="date" id="editReturn" placeholder="Return Date" />
+      <br />
+      <label for="editMission">Mission</label>
+      <input type="text" required id="editMission" placeholder="Mission" />
+      <br />
+      <label for="editImage">Image:</label>
+      <input type="file" id="editImage" required />
+      <label for="previewImage">Image preview</label>
+      <img
+        id="previewImage"
+        src="image/download.png"
+        class="profile"
+        alt="Image Preview"
+        style="display: none"
+      />
+      <button id="closeModal">Close</button>
     </div>
+
     <!--FOOTER STARTS-->
     <footer>
-        <p>Follow us on social media:</p>
-        <div class="footer-logo-div">
-            <img src="image/web_link.png" alt="Internet Logo">
-            <a style="color: #fff; padding: 10px;" href="https://calledtoserve.vercel.app/agege-stake/index.html">Called
-                To Serve Official Website</a>
-        </div>
-        <br />
-        <p><strong>"Behold, I am a disciple of Jesus christ, the Son of God. I have been called of him to declare his
-                words
-                among his people, that they might have everlasting life"</strong></p>
-        <br />
-        <p>Courtesy: Bro Israel Oyeyemi, Bro Victor Etuk, Bro Israel Mobote</p>
-        <div class="footer-logo-div">
-            <img src="image/logo-2.jpeg" alt="Logo-img" class="logo-img">
-            <p>
-                &copy; 2024 (LDS) Nigeria Lagos Agege Missionary Service
-            </p>
-        </div>
+      <p>Follow us on social media:</p>
+      <div class="footer-logo-div">
+        <img src="image/web_link.png" alt="Internet Logo" />
+        <a
+          style="color: #fff; padding: 10px"
+          href="https://calledtoserve.vercel.app/agege-stake/index.html"
+          >Called To Serve Official Website</a
+        >
+      </div>
+      <br />
+      <p>
+        <strong
+          >"Behold, I am a disciple of Jesus christ, the Son of God. I have been
+          called of him to declare his words among his people, that they might
+          have everlasting life"</strong
+        >
+      </p>
+      <br />
+      <p>Courtesy: Bro Israel Oyeyemi, Bro Victor Etuk, Bro Israel Mobote</p>
+      <div class="footer-logo-div">
+        <img src="image/logo-2.jpeg" alt="Logo-img" class="logo-img" />
+        <p>&copy; 2024 (LDS) Nigeria Lagos Agege Missionary Service</p>
+      </div>
     </footer>
     <!--FOOTER ENDS-->
-</body>
 
+    <!-- BOOTSTRAP JS STARTS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- BOOTSTRAP JS ENDS -->
+  </body>
 </html>

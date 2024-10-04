@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Merriweather", serif;
+  text-decoration: none;
 }
 body {
   font-family: "Merriweather", cursive;
@@ -23,6 +24,34 @@ header {
 header a {
   color: #fff;
 }
+
+/*----MISSIONARIES CARDS STARTS*/
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+  height: 400px;
+  object-fit: cover;
+}
+
+.bg-primary {
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.text-white {
+  color: white;
+}
+/*----MISSIONARIES CARDS ENDS*/
+
+
 .head-div {
   display: flex;
   justify-content: center;
@@ -168,7 +197,7 @@ h3 {
   color: #fff;
   font-size: 1.2em;
 }
-.profile {
+/* .profile {
   width: 250px;
   height: fit-content;
   margin: 20px 10px;
@@ -176,7 +205,7 @@ h3 {
 }
 .profile:hover {
   opacity: 0.9;
-}
+} */
 .details {
   width: 95px;
   font-weight: 900;
@@ -209,7 +238,7 @@ h3 {
   background-color: blue;
   color: #fff;
 }
-.missionaries_card {
+/* .missionaries_card {
   border-radius: 5px;
   background-color: #c9cacf;
   margin: 15px;
@@ -221,7 +250,7 @@ h3 {
   align-items: center;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.801);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
+} */
 
 .view {
   padding: 10px;
@@ -237,10 +266,10 @@ h3 {
 #scripture {
   text-decoration: underline;
 }
-.missionaries_list {
+/* .missionaries_list {
   /* display: flex;
   flex-direction: column;
-  flex-wrap: wrap;  */
+  flex-wrap: wrap;  
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
   grid-gap: 2rem;
@@ -249,7 +278,7 @@ h3 {
   padding: 15px;
   align-items: center;
   margin: 20px;
-}
+} */
 #editModal {
   color: #050505;
   background-color: #323b6e;

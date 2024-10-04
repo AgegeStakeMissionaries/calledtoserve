@@ -73,7 +73,7 @@ nav a:hover {
 }
 
 .main_img {
-  background: url("hero-image.jpg") no-repeat center center/cover;
+  /* background: url("hero-image.jpg") no-repeat center center/cover; */
   height: 300px;
   display: flex;
   flex-direction: column;
@@ -286,6 +286,52 @@ input:required:valid,
 select:valid {
   border-left-color: green;
 }
+/* MODALS START */
+.button {
+  border-radius: 10px;
+  border: 0;
+  cursor: pointer;
+  background-color: #333;
+  color: #eee;
+  padding: 0.5rem 1rem;
+}
+.button:hover,
+.button:focus {
+  background: rgb(22, 47, 131);
+}
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+}
+
+:modal {
+  background-color: beige;
+  border-radius: 10px;
+  border: 1px solid green;
+}
+.modal {
+  padding: 1em;
+  max-width: 375px;
+  border: 0;
+  box-shadow: 0 0 1em rgb(0 0 0 / 0.3);
+}
+.modal h2{
+  font-size: 1.5rem;
+  font-style: oblique;
+  text-decoration: underline;
+}
+.memories{
+  height: 50%;
+  width: 100%;
+  border: 2px solid black;
+}
+.modal::backdrop {
+  background-color: grey;
+  filter: opacity(0.4);
+}
+/* MODAL ENDS */
 footer {
   text-align: center;
   padding: 20px;

@@ -9,19 +9,23 @@
     "name": "Elder Israel Oyeyemi",
     "departureDate": "15-10-2024",
     "mission": "Nigeria Uyo Mission",
-    "image": "image/israel.jpg"
+    "image": "image/israel.jpg",
+    "memories": "image/victor-israel.jpg"
   },
   {
     "name": "Elder Victor D. Etuk",
     "departureDate": "21-12-2024",
     "mission": "Nigeria Calabar Mission",
-    "image": "image/victor-d-etuk.jpg"
+    "image": "image/victor-d-etuk.jpg",
+    "memories": "image/victor-favour.jpg"
   },
   {
     "name": "Sister Ayomide Ijitola",
     "departureDate": "21-11-2024",
     "mission": "Nigeria Enugu Mission",
-    "image": "image/sister-ayomide.jpg"
+    "image": "image/sister-ayomide.jpg",
+    "memories": "image/ayomide-2.jpg"
+
   },
   {
     "name": "Elder Josiaih J. Kefas",

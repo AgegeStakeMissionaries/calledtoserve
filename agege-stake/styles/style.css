@@ -42,7 +42,9 @@ header a {
   left: 85px;
   color: #fff;
 }
-h1, h2, footer{
+h1,
+h2,
+footer {
   font-family: "Poppins", sans-serif;
 }
 nav {
@@ -177,7 +179,6 @@ h3 {
 }
 .details {
   width: 95px;
-  padding: 20px;
   font-weight: 900;
 }
 .links {
@@ -212,7 +213,7 @@ h3 {
   border-radius: 5px;
   background-color: #c9cacf;
   margin: 15px;
-  padding: 15px;
+  padding: 10px;
   border: 2px solid #2682eb;
   display: flex;
   /* flex-direction: column; */

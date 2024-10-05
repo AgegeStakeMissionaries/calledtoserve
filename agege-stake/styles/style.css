@@ -26,7 +26,7 @@ header a {
 }
 
 /*----MISSIONARIES CARDS STARTS*/
-.card {
+/* .card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border: none;
 }
@@ -48,7 +48,7 @@ header a {
 
 .text-white {
   color: white;
-}
+} */
 /*----MISSIONARIES CARDS ENDS*/
 
 
@@ -71,7 +71,7 @@ header a {
   color: #2682eb;
 }
 .h1-sub {
-  position: absolute;
+  /* position: absolute; */
   top: 50px;
   left: 85px;
   color: #fff;
@@ -90,7 +90,7 @@ nav a {
   margin: 0.5rem;
   display: flex;
   font-size: 1.5rem;
-  border-radius: var(--border-radius);
+  border-radius: 10px;
   justify-content: center;
   padding: 1rem;
   cursor: pointer;
@@ -269,7 +269,7 @@ h3 {
   flex-direction: column;
   flex-wrap: wrap;  
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
   grid-gap: 2rem;
   margin: 1rem;
   justify-content: center;

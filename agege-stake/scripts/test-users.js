@@ -23,28 +23,28 @@ fetch("missionaries.json")
               <h3>${missionary.name}</h3>
               <h3>Departure Date: ${missionary.departureDate}</h3>
               <h3>Mission: ${missionary.mission}</h3>
-              <button class="button open-button">More</button>
+              <button style="display:none;" class="button open-button">More</button>
           </div>
         `;
 
       missionariesList.appendChild(missionaryCard);
 
       // Add event listener to the open button
-      const openButton = missionaryCard.querySelector(".open-button");
-      openButton.addEventListener("click", function () {
-        // Update modal content here if needed
-        modal.querySelector("h2").textContent = missionary.name;
-        modal.querySelector(
-          "p"
-        ).innerHTML = `<strong>${missionary.name}:</strong> has been called to serve the lord on the <strong>${missionary.departureDate}</strong> and would be serving in <strong>${missionary.mission}</strong>. 
+      // const openButton = missionaryCard.querySelector(".open-button");
+      // openButton.addEventListener("click", function () {
+      //   // Update modal content here if needed
+      //   modal.querySelector("h2").textContent = missionary.name;
+      //   modal.querySelector(
+      //     "p"
+      //   ).innerHTML = `<strong>${missionary.name}:</strong> has been called to serve the lord on the <strong>${missionary.departureDate}</strong> and would be serving in <strong>${missionary.mission}</strong>. 
         
-        <br>
+      //   <br>
 
-        We wish ${missionary.gender} goodluck as he proceeds on his journey and pray that the Holy Spirit becomes his constant companion at all times and in all places. 👋👋🙏🤝`; // Customize this line
-        let imgBox = document.querySelector(".memories");
-        imgBox.setAttribute("src", `${missionary.memories}`);
-        modal.showModal();
-      });
+      //   We wish ${missionary.gender} goodluck as he proceeds on his journey and pray that the Holy Spirit becomes his constant companion at all times and in all places. 👋👋🙏🤝`; // Customize this line
+      //   let imgBox = document.querySelector(".memories");
+      //   imgBox.setAttribute("src", `${missionary.memories}`);
+      //   modal.showModal();
+      // });
     });
   })
   .catch((error) => {

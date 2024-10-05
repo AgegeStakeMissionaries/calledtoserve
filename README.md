@@ -1,3 +1,5 @@
+PLS INFORM ADMIN BEFRE PUSHING CODE OOOO. Your code needs reviewing before push!!!
+
 # agegestake-missionaries
 #Website name:  Called To Serve!
 
@@ -36,6 +38,7 @@ Github:
 2.Folder name: Called to serve
 3.File names: (index, missionaires,about).html
 4.Website link aspiration: https://www.agegestakemissionaries/calledtoserve/index.html.com
+COURTESY: ISraelMobote, Israel Oyeyemi, VIctor D Etuk
 
 
 Preview

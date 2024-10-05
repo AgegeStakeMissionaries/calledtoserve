@@ -3,6 +3,14 @@
   h1 {
     font-size: 2rem;
   }
+  .head-div{
+    flex-direction: row;
+  }
+  .head-txt{
+    display: flex;
+    align-items: center;
+    /* flex-direction: column; */
+  }
   a {
     font-size: 1rem;
     cursor: pointer;
@@ -22,94 +30,12 @@
     color: #ffffff;
     cursor: pointer;
   }
-  .active::before {
-    content: "";
-  }
-  nav .active {
-    text-decoration: underline;
-    border-radius: 10px;
-    font-weight: bolder;
-    padding-bottom: 20px;
-  }
-  .hero-div{
-    height: auto;
-    font-size: 2rem;
-  }
-.weather-icon {
-  margin-top: 30px;
-  width: 70%;
-  height: auto;
 }
-  footer {
-    font: 1.25rem;
-    padding: 10px;
-  }
-  #icon-div img {
-    width: 50px;
-    height: 50px;
-  }
-  .footer-con {
-    padding: 10px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  }
-  .container-box {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    max-width: 100%;
-    padding: 2rem;
-  }
-  #weather {
-    display: grid;
-    grid-template-columns: 1fr;
-    padding: 2rem;
-  }
-  .under{
-    text-decoration: underline;
-    padding: 20px;
-  }
-  .form-img{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-}
-.choose-txt{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-}
-  .image-div{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  }
-  .activity-img{
-    padding: 10px;
-  }
-  .activity-img img{
-    width: 450px;
-    height: 300px;
-  }
-  table {
-  width: 80%;
-  margin: 0 auto;
-  text-align: center;
-}
-  .activity-img img:hover {box-shadow: 0 0 50px #333;}
-}
-.field{
-  margin: 10px 20px;
-}
+
 /* Largest screen pc */
 @media only screen and (min-width: 900px) {
-  #myButton {
-    display: none;
-  }
-  h1 {
-    font-size: 2rem;
-    margin: 1rem;
-  }
-  a {
-    font-size: 1rem;
-    cursor: pointer;
+  .head-div{
+    flex-direction: row;
   }
   header {
     display: flex;
@@ -118,139 +44,7 @@
   }
   nav {
     background-color: transparent;
-    grid-template-rows: 1fr;
-    transition: none;
-  }
-  nav ul {
-    display: flex;
+    display:flex;
     justify-content: space-evenly;
   }
-  nav a {
-    color: #ffffff;
-    cursor: pointer;
-  }
-  nav a:hover {
-    background-color: #0c910c;
-    border-radius: 10px;
-  }
-  .active::before {
-    content: "";
-  }
-  nav .active {
-    text-decoration: underline;
-    border-radius: 10px;
-    font-weight: bolder;
-    padding-bottom: 20px;
-  }
-  .hero-div{
-    height: 75vh;
-    font-size: 2.5rem;
-  }
-  .weather-icon {
-  margin-top: 10px;
-  width: 80%;
-  height: auto;
-}
-  footer {
-    font: 1.25rem;
-    padding: 10px;
-  }
-  #icon-div img {
-    width: 50px;
-    height: 50px;
-  }
-  .footer-con {
-    padding: 10px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  }
-  .container-box {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    max-width: 100%;
-    padding: 2rem;
-  }
-  #weather {
-    display: grid;
-    grid-template-columns: 1fr;
-    padding: 2rem;
-  }
-  textarea{
-    padding: 20px;
-    margin-left: 30px;
-  }
-  .image-div{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  }
-  .welcome{
-    padding: .5rem 1.5rem;
-    margin: 1rem;
-    border: 1px solid;
-    display: flex;
-    align-items: center;
-    border-radius: var(--border-radius);
-    background-color: #fff;
-}
-.welcome-img{
-    width: 50vh;
-    height: 50%;
-    display: flex;
-    margin: 1rem auto;
-}
-#learn-more{
-  position: absolute;
-  transform: translateY(290%);
-}
-.offer .more{
-  width: 100px;
-  height: 100px;
-  padding: .25rem;
-}
-
-/* tables */
-table {
-  width: 100%;
-}
-.offer{
-margin: 1.5rem;
-  text-align: center;
-  color: #fff;
-  padding: 20px;
-}
-.offer-box{
-  padding: 1rem;
-  display: flex;
-  align-items: center;
-  float: right;
-
-}
-.offer-box ul>li{
-padding: 1rem;
-text-align: center;
-font-size: larger;
-color: #fff;
-display: flex;
-align-items: center;
-flex-direction: column;
-}
-.offer-img{
-  border-radius: var(--border-radius);
-  box-shadow: 2px 2px 2px #767a83;
-  width: 100%;
-  align-items: center;
-  max-width: 400px;
-  height: 100%;
-  
-}
-.form-img{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 20px;
-}
-.choose-txt{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-}
-
 }

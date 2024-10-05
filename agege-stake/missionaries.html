@@ -28,10 +28,12 @@
   <header>
     <div class="head-div">
       <img src="image/logo-2.jpeg" alt="Logo-img" class="logo-img">
+      <div class="head-txt">
       <h1 class="called">Called</h1>
       <h1>To</h1>
       <h1 class="serve">Serve</h1>
       <h1>💪</h1>
+      </div>
     </div>
     <h3 class="h1-sub">Connecting Missionaries, Sharing Experience.</h3>
     <h2>Agege Stake Missionary Hub</h2>
@@ -79,30 +81,8 @@
     <button class="close-btn">&#x274C</button>
   </dialog>
   <a href="missionaries.html">
-    <button class="view"><strong>+ View All</strong></button>
+    <button type="button" class="view"><strong>+ View All</strong></button>
   </a>
-  <button id="addMissionary" class="view">Add Missionary</button>
-
-  <!-- Edit Modal -->
-  <div id="editModal" style="display:none;">
-    <label for="editName">Name:</label>
-    <input required type="text" maxlength="25" id="editName" placeholder="Name">
-    <br>
-    <label for="editDeparture">Departure Date:</label>
-    <input required type="date" id="editDeparture" placeholder="Departure Date">
-    <br>
-    <label for="editReturn">Return Date:</label>
-    <input required type="date" id="editReturn" placeholder="Return Date">
-    <br>
-    <label for="editMission">Mission</label>
-    <input type="text" required id="editMission" placeholder="Mission">
-    <br>
-    <label for="editImage">Image:</label>
-    <input type="file" id="editImage" required>
-    <label for="previewImage">Image preview</label>
-    <img id="previewImage" src="image/download.png" class="profile" alt="Image Preview" style="display:none;">
-    <button id="closeModal">Close</button>
-  </div>
   <!--FOOTER STARTS-->
   <footer>
     <p>Follow us on social media:</p>

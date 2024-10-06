@@ -4,7 +4,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Merriweather", serif;
-  text-decoration: none;
 }
 body {
   font-family: "Merriweather", cursive;
@@ -31,17 +30,15 @@ header a {
   align-items: center;
   padding: 1rem;
 }
-.head-txt{
-    display: flex;
-    align-items: center;
-    /* flex-direction: column; */
-  }
-.logo-img {
-  width: 25%;
-  border-radius: 50%;
-  margin-right: 10px;
+.head-txt {
+  display: flex;
+  align-items: center;
 }
-
+.logo-img {
+  width: 75.5px;
+  height: 75.5px;
+  border-radius: 50%;
+}
 .called {
   color: #7ebdff;
 }
@@ -82,9 +79,8 @@ nav a:hover {
   justify-content: center;
   align-items: center;
 }
-
 .main_img {
-  /* height: 350px; */
+  max-height: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -93,13 +89,9 @@ nav a:hover {
   overflow: hidden;
   padding: 20px 20px 0 20px;
 }
-
-.main_img #drop {
-  animation: fadeIn 1s ease-in;
-  margin: 1rem;
-  font-size: 35px;
+.main_img h2 {
+  animation: slideIn 1s ease-in;
 }
-
 .main_img h3 {
   padding: 5px 15px;
   color: #323b6e;
@@ -144,7 +136,6 @@ h3 {
   background-color: #053862;
   color: #fff;
 }
-
 .hidden {
   opacity: 0;
   transition: all 2s;
@@ -154,7 +145,6 @@ h3 {
   opacity: 1;
   transform: translateX(0);
 }
-
 .president {
   background-image: url("../image/russel.jpeg");
   width: 100%;
@@ -162,7 +152,6 @@ h3 {
   font-size: 2.5rem;
   height: 80vh;
 }
-
 .box {
   text-align: center;
   background-color: #14417c;
@@ -206,7 +195,6 @@ h3 {
 .view:hover {
   transition: transform 0.8s ease, box-shadow 0.3s ease;
   box-shadow: 0 3px 4px rgba(17, 15, 15, 0.801);
-
   background-color: blue;
   color: #fff;
 }
@@ -221,9 +209,7 @@ h3 {
   justify-content: center;
   align-items: center;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.801);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 .view {
   padding: 10px;
   color: #fff;
@@ -232,7 +218,6 @@ h3 {
   margin: 2rem;
   border-radius: 5px;
 }
-
 .active,
 #scripture {
   text-decoration: underline;
@@ -240,7 +225,7 @@ h3 {
 .missionaries_list {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;  
+  flex-wrap: wrap;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
   grid-gap: 2rem;
@@ -253,92 +238,6 @@ h3 {
   display: flex;
   justify-content: space-around;
 }
-label {
-  display: block;
-  color: rgb(255, 255, 255);
-  justify-content: space-around;
-  padding-left: 20px;
-  font-weight: 900;
-  padding-bottom: 10px;
-}
-input {
-  padding: 0.5em;
-  background-color: #eee;
-  display: block;
-  border: solid 1px #999;
-  border-radius: 6px;
-  padding: 0.75rem;
-  color: #555;
-  width: 80%;
-  max-width: 400px;
-  margin-left: 20px;
-  border: 1px solid #999;
-  border-radius: 4px;
-  border-left-width: 5px;
-  border-left-color: #555;
-}
-
-input:required,
-select:required {
-  border-left-color: #d70000;
-}
-input:focus,
-select:focus {
-  border-color: black;
-  outline: none;
-}
-input:required:valid,
-select:valid {
-  border-left-color: green;
-}
-/* MODALS START */
-.button {
-  border-radius: 10px;
-  border: 0;
-  cursor: pointer;
-  background-color: #333;
-  color: #eee;
-  padding: 0.5rem 1rem;
-}
-.button:hover,
-.button:focus {
-  background: rgb(22, 47, 131);
-}
-.close-btn {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background: none;
-}
-
-:modal {
-  background-color: beige;
-  border-radius: 10px;
-  border: 1px solid green;
-}
-.modal {
-  padding: 1em;
-  max-width: 375px;
-  position: absolute;
-  top: 50dvh;
-  left: 5px;
-  border: 0;
-  box-shadow: 0 0 1em rgb(0 0 0 / 0.3);
-}
-.modal h2 {
-  font-size: 1.5rem;
-  font-style: oblique;
-  text-decoration: underline;
-}
-.memories {
-  height: 50%;
-  width: 100%;
-  border: 2px solid black;
-}
-.modal::backdrop {
-  background-color: grey;
-  filter: opacity(0.4);
-}
 /* MODAL ENDS */
 footer {
   text-align: center;
@@ -350,19 +249,23 @@ footer {
 .footer-logo-div {
   display: flex;
   align-items: center;
+  padding: 10px;
 }
 .footer-logo-div img {
-  width: 10%;
+  width: 15%;
 }
-
-/*  */
+/* .footer .logo-img{
+  width: 25%;
+  height: auto;
+  margin-right: 10px;
+} */
 @keyframes slideIn {
   from {
     opacity: 0;
     transform: translateX(-20px);
   }
   to {
-    opacity: 1;
+    opacity: (1);
     transform: translateX(0);
   }
 }

@@ -26,34 +26,9 @@ fetch("missionaries.json")
               <button style="display:none;" class="button open-button">More</button>
           </div>
         `;
-
       missionariesList.appendChild(missionaryCard);
-
-      // Add event listener to the open button
-      // const openButton = missionaryCard.querySelector(".open-button");
-      // openButton.addEventListener("click", function () {
-      //   // Update modal content here if needed
-      //   modal.querySelector("h2").textContent = missionary.name;
-      //   modal.querySelector(
-      //     "p"
-      //   ).innerHTML = `<strong>${missionary.name}:</strong> has been called to serve the lord on the <strong>${missionary.departureDate}</strong> and would be serving in <strong>${missionary.mission}</strong>. 
-        
-      //   <br>
-
-      //   We wish ${missionary.gender} goodluck as he proceeds on his journey and pray that the Holy Spirit becomes his constant companion at all times and in all places. 👋👋🙏🤝`; // Customize this line
-      //   let imgBox = document.querySelector(".memories");
-      //   imgBox.setAttribute("src", `${missionary.memories}`);
-      //   modal.showModal();
-      // });
     });
   })
   .catch((error) => {
     console.error("Error fetching missionaries:", error);
   });
-
-const modal = document.querySelector("#modal");
-const closeModal = document.querySelector(".close-btn");
-
-closeModal.addEventListener("click", function () {
-  modal.close();
-});

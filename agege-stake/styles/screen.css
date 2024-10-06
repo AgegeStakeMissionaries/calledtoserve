@@ -3,13 +3,12 @@
   h1 {
     font-size: 2rem;
   }
-  .head-div{
+  .head-div {
     flex-direction: row;
   }
-  .head-txt{
+  .head-txt {
     display: flex;
     align-items: center;
-    /* flex-direction: column; */
   }
   a {
     font-size: 1rem;
@@ -22,8 +21,10 @@
   }
   nav {
     background-color: transparent;
+    background-color: #14417c;
+    flex-direction: row;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     transition: none;
   }
   nav a {
@@ -31,10 +32,9 @@
     cursor: pointer;
   }
 }
-
 /* Largest screen pc */
 @media only screen and (min-width: 900px) {
-  .head-div{
+  .head-div {
     flex-direction: row;
   }
   header {
@@ -44,7 +44,9 @@
   }
   nav {
     background-color: transparent;
-    display:flex;
+    display: flex;
+    flex-direction: row;
+    background-color: #14417c;
     justify-content: space-evenly;
   }
 }

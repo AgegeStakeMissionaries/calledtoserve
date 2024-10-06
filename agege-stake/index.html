@@ -25,159 +25,106 @@
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/style.css">
   <link rel="stylesheet" href="styles/screen.css">
+  <link rel="stylesheet" href="styles/load.css">
   <script src="scripts/test-users.js" defer></script>
   <script src="scripts/main.js" defer></script>
+  <script src="scripts/load.js" defer></script>
 </head>
 
 <body>
-  <!--HEADER STARTS-->
-  <header>
-    <div class="head-div">
-      <img src="image/Designer.webp" alt="Logo-img" class="logo-img" />
-      <div class="head-txt">
-        <h1 class="called">Called</h1>
-        <h1>To</h1>
-        <h1 class="serve">Serve</h1>
-        <h1>💪</h1>
+  <div id="loader" class="loader">
+    <div class="outer"></div>
+    <div class="middle"></div>
+    <div class="inner"></div>
+  </div>
+  <div id="content" style="display:none;">
+    <!--HEADER STARTS-->
+    <header>
+      <div class="head-div">
+        <img src="image/Designer.webp" alt="Logo-img" class="logo-img">
+        <div class="head-txt">
+          <h1 class="called">Called</h1>
+          <h1>To</h1>
+          <h1 class="serve">Serve</h1>
+          <h1>💪</h1>
+        </div>
       </div>
+      <h2>Agege Stake Missionary Hub</h2>
+      <a href="https://calledtoserve.vercel.app/agege-stake/index.html">calledtoserve.com</a>
+      <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="missionaries.html">Missionaries</a>
+        <a href="#">About</a>
+      </nav>
+    </header>
+    <div class="main_img">
+      <h2 class="hidden" style="color: #053862">CALLED TO SERVE! 💪</h2>
+      <h3>“Called to serve”- A community platform for missionaries of Agege stake to connect missionaries who just
+        received their
+        calls to share their respective mission places for others to see. And to bring awareness of when and where
+        their fellow
+        missionaries would be serving to all missionaries at Agege stake .</h3>
+      <!-- <button onclick="alert('View Missionaries')">View Missionaries</button> -->
     </div>
-    <h2>Agege Stake Missionary Hub</h2>
-    <a href="https://calledtoserve.vercel.app/agege-stake/index.html">calledtoserve.com</a>
-    <nav>
-      <a href="index.html" class="active">Home</a>
-      <a href="missionaries.html">Missionaries</a>
-      <a href="#">About</a>
-    </nav>
-  </header>
+    <!-- Carousel images start -->
+    <img src="image/group-photo.webp" loading="lazy" alt="Group-Photograph" class="group-pic">
+    <div class="text-box">
+      <h2>Your Missionary Purpose</h2>
+      <h3>To invite others to come unto christ by helping them recieve the restored gospel through faith in Jesus
+        Christ and His Atonement, repentance, baptism, recieving the gift of the Holy Ghost, and enduring till the
+        end.</h3>
+    </div>
+    <img src="image/prep-class.jpeg" loading="lazy" class="group-pic" alt="MissionPrep class">
 
-  <!--HEADER ENDS-->
-  <div class="main_img">
-    <h2 class="hidden" style="color: #053862">CALLED TO SERVE! 💪</h2>
-    <h3>“Called to serve”- A community platform for missionaries of Agege stake to connect missionaries who just
-      received their
-      calls to share their respective mission places for others to see. And to bring awareness of when and where
-      their fellow
-      missionaries would be serving to all missionaries at Agege stake .</h3>
-    <!-- <button onclick="alert('View Missionaries')">View Missionaries</button> -->
-  </div>
-  <!-- Carousel images start -->
-  <img src="image/group-photo.webp" loading="lazy" alt="Group-Photograph" class="group-pic">
-  <div class="text-box">
-    <h2>Your Missionary Purpose</h2>
-    <h3>To invite others to come unto christ by helping them recieve the restored gospel through faith in Jesus
-      Christ and His Atonement, repentance, baptism, recieving the gift of the Holy Ghost, and enduring till the
-      end.</h3>
-  </div>
-  <img src="image/prep-class.jpeg" loading="lazy" class="group-pic" alt="MissionPrep class">
-
-  <!-- MAIN IMAGE BODY ENDS -->
-  <!-- Missionary quotes start -->
-  <div class="quotes">
-    <section class="hidden">
-      <h2 id="scripture"></h2>
-      <h3 id="quoteText">
-      </h3>
+    <!-- MAIN IMAGE BODY ENDS -->
+    <!-- Missionary quotes start -->
+    <div class="quotes">
+      <section class="hidden">
+        <h2 id="scripture"></h2>
+        <h3 id="quoteText">
+        </h3>
+      </section>
+    </div>
+    <!-- Missionary quotes end -->
+    <div class="president">
+      <h3>As you share the gospel, you will find joy, and those you share it with will find hope.</h3>
+    </div>
+    <!--MISSIONARY CARD STARTS-->
+    <div class="box">
+      <h1>Our Missionaries</h1>
+      <h3>View all of out Missionaries & prospective missionaries from Agege Stake</h3>
+    </div>
+    <section class="missionaries_list" id="missionariesList">
+      <!-- Missionaries will be populated here -->
     </section>
-  </div>
-  <!-- Missionary quotes end -->
-  <div class="president">
-    <h3>As you share the gospel, you will find joy, and those you share it with will find hope.</h3>
-  </div>
-  <!--MISSIONARY CARD STARTS-->
-  <div class="box">
-    <h1>Our Missionaries</h1>
-    <h3>View all of out Missionaries & prospective missionaries from Agege Stake</h3>
-  </div>
-  <section class="missionaries_list" id="missionariesList">
-    <!-- Missionaries will be populated here  -->
-    <div class="missionaries_card">
-      <img src="image/desmond-alasa.webp" loading="lazy" alt="Profile picture" class="profile">
-      <div class="details">
-        <h3>Elder Desmond Alasa Ogboanoh</h3>
-        <h3>Depature Date: 15-04-2024</p>
-          <h3>Mission: Cape Verde Mission</p>
-      </div>
-    </div>
-    <div class="missionaries_card">
-      <img src="image/favour-inyang.webp" loading="lazy" alt="Profile picture" class="profile">
-      <div class="details">
-        <h3>Sister Fabour Inyang</h3>
-        <h3>Depature Date: March-2025</p>
-          <h3>Mission: Phillipines Mission</p>
-      </div>
-    </div>
-    <div class="missionaries_card">
-      <img src="image/israel.jpg" loading="lazy" alt="Profile picture" class="profile">
-      <div class="details">
-        <h3>Elder Israel Oyeyemi</h3>
-        <h3>Depature Date: 15-10-2024</p>
-          <h3>Mission: Nigeria Uyo Mission</p>
-      </div>
-    </div>
-    <div class="missionaries_card">
-      <img src="image/victor.jpeg" loading="lazy" alt="Profile picture" class="profile">
-      <div class="details">
-        <h3>Elder Victor D. Etuk</h3>
-        <h3>Depature Date: 21-12-2024</p>
-          <h3>Mission: Nigeria Calabar Mission</p>
-      </div>
-    </div>
-    <div class="missionaries_card">
-      <img src="image/sister-ayomide.jpg" loading="lazy" alt="Profile picture" class="profile">
-      <div class="details">
-        <h3>Sister Ayomide Ijitola</h3>
-        <h3>Depature Date: 21-11-2024</p>
-          <h3>Mission: Nigeria Enugu Mission</p>
-      </div>
-    </div>
-    <div class="missionaries_card">
-      <img src="image/kefas-close-2.jpg" loading="lazy" alt="Profile picture" class="profile">
-      <div class="details">
-        <h3>Elder Josiaih J. Kefas</h3>
-        <h3>Depature Date: 21-01-2025</p>
-          <h3>Mission: Nigeria Uyo Mission</p>
-      </div>
-    </div>
-
-    <div class="missionaries_card">
-      <img src="image/favour-etuk.jpg" loading="lazy" alt="Profile picture" class="profile">
-      <div class="details">
-        <h3>Sister Favour Etuk</h3>
-        <h3>Depature Date: 27-03-2025</p>
-          <h3>Mission: Nigeria Abuja Mission</p>
-      </div>
-    </div>
-    </div>
-    </div>
     <a href="missionaries.html">
       <button title="View All" class="view"><strong>+ View All</strong></button>
     </a>
-  </section>
-
-
-  <!--FOOTER STARTS-->
-  <footer>
-    <p>Follow us on social media:</p>
-    <div class="footer-logo-div">
-      <img src="image/web_link.png" loading="lazy" alt="Internet Logo" />
-      <a style="color: #fff; padding: 10px" href="https://calledtoserve.vercel.app/agege-stake/index.html">Called To
-        Serve Official Website</a>
-    </div>
-    <br />
-    <p>
-      <strong>"Behold, I am a disciple of Jesus christ, the Son of God. I have been
-        called of him to declare his words among his people, that they might
-        have everlasting life"</strong>
-    </p>
-    <br />
-    <p>Courtesy: Bro Israel Oyeyemi, Bro Victor Etuk, Bro Israel Mobote</p>
-    <div class="footer-logo-div">
-      <!-- <img src="image/logo-2.jpeg" alt="Logo-img" class="logo-img" /> -->
-      <p>&copy; 2024 (LDS) Nigeria Lagos Agege Missionary Service</p>
-    </div>
-  </footer>
-  <!--FOOTER ENDS-->
-
+    </section>
 </body>
+
+<!--FOOTER STARTS-->
+<footer>
+  <p>Follow us on social media:</p>
+  <div class="footer-logo-div">
+    <img src="image/web_link.png" loading="lazy" alt="Internet Logo" />
+    <a style="color: #fff; padding: 10px" href="https://calledtoserve.vercel.app/agege-stake/index.html">Called To
+      Serve Official Website</a>
+  </div>
+  <br />
+  <p>
+    <strong>"Behold, I am a disciple of Jesus christ, the Son of God. I have been
+      called of him to declare his words among his people, that they might
+      have everlasting life"</strong>
+  </p>
+  <br />
+  <p>Courtesy: Bro Israel Oyeyemi, Bro Victor Etuk, Bro Israel Mobote</p>
+  <div class="footer-logo-div">
+    <!-- <img src="image/logo-2.jpeg" alt="Logo-img" class="logo-img" /> -->
+    <p>&copy; 2024 (LDS) Nigeria Lagos Agege Missionary Service</p>
+  </div>
+</footer>
+<!--FOOTER ENDS-->
+</div>
 
 </html>

@@ -7,8 +7,8 @@
     "gender": "him"
   },
   {
-    "name": "Sister Favour Inyang",
-    "departureDate": "00-03-2025",
+    "name": "Sister Victoria Inyang",
+    "departureDate": "03-2025",
     "gender": "her",
     "mission": "Phillipines Mission",
     "image": "image/favour-inyang.webp"
@@ -35,7 +35,7 @@
     "gender": "her"
   },
   {
-    "name": "Elder Josiaih J. Kefas",
+    "name": "Elder Josiah J. Kefas",
     "departureDate": "21-01-2025",
     "mission": "Nigeria Uyo Mission",
     "gender": "him",

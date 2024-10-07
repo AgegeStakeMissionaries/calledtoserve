@@ -26,9 +26,11 @@
   <link rel="stylesheet" href="styles/style.css">
   <link rel="stylesheet" href="styles/screen.css">
   <link rel="stylesheet" href="styles/load.css">
+  <link rel="stylesheet" href="styles/ads.css">
   <script src="scripts/test-users.js" defer></script>
   <script src="scripts/main.js" defer></script>
   <script src="scripts/load.js" defer></script>
+  <script src="scripts/ads.js" defer></script>
 </head>
 
 <body>
@@ -49,13 +51,13 @@
           <h1>💪</h1>
         </div>
       </div>
-      <h3 class="h1-sub"style="text-decoration: underline;">Connecting Missionaries, Sharing Experience.</h3>
+      <h3 class="h1-sub" style="text-decoration: underline;">Connecting Missionaries, Sharing Experience.</h3>
       <h2>Agege Stake Missionary Hub</h2>
       <a href="https://calledtoserve.vercel.app/agege-stake/index.html">calledtoserve.com</a>
       <nav>
         <a href="index.html">Home</a>
         <a href="missionaries.html" class="active">Missionaries</a>
-        <a href="#">About</a>
+        <a href="about.html">About</a>
       </nav>
     </header>
     <!--HEADER ENDS-->
@@ -82,20 +84,28 @@
     <!--MISSIONARY CARD STARTS-->
     <div class="box">
       <h1>Our Missionaries</h1>
-      <h3>View all of out Missionaries & prospective missionaries from Agege Stake</h3>
+      <h3>View all of out Missionaries from Agege Stake</h3>
     </div>
     <section class="missionaries_list" id="missionariesList">
       <!-- Missionaries will be populated here -->
     </section>
-    <dialog class="modal" id="modal">
-      <h2></h2>
-      <p>
-      </p>
-      <img class="memories">
-      <button class="close-btn">&#x274C</button>
-    </dialog>
+    <div id="box-card">
+      <div class="modal-card" id="ads" style="display: none;">
+        <h2>Missionaries Worldwide</h2>
+        <p>Explore essential tools and resources to support missionaries in their journey of faith and service. From
+          inspiring books to practical supplies, we've got everything you need.</p>
+        <a href="https://www.amazon.com/shop/missionariesworldwide?ref_=cm_sw_r_cp_mwn_aipsfshop_aipsfmissionariesworldwide_684EBCJDZ6BQFT8SH4G2_1&language=en_US"
+          target="_blank" class="btn">Visit Shop 🛒</a>
+        <button type="button" class="exit">
+          &#x274C;
+        </button>
+      </div>
+    </div>
     <a href="missionaries.html">
-      <button type="button" class="view"><strong>+ View All</strong></button>
+      <button type="button" class="view"><strong>View All</strong></button>
+    </a>
+    <a href="about.html">
+      <button type="button" class="view"><strong>+ Add Misionaries</strong></button>
     </a>
     <!--FOOTER STARTS-->
     <footer>
@@ -106,20 +116,15 @@
           To Serve Official Website</a>
       </div>
       <br />
-      <p><strong>"Behold, I am a disciple of Jesus christ, the Son of God. I have been called of him to declare his
-          words
-          among his people, that they might have everlasting life"</strong></p>
+      <p><strong>"Behold, I am a disciple of Jesus christ, the Son of God. I have been called of him to declare his <br>
+          words among his people, that they might have everlasting life"</strong></p>
       <br />
-      <p>Courtesy: Bro Israel Oyeyemi, Bro Victor Etuk, Bro Israel Mobote</p>
       <div class="footer-logo-div">
-        <!-- <img src="image/logo-2.jpeg" alt="Logo-img" class="logo-img"> -->
-        <p>
-          &copy; 2024 (LDS) Nigeria Lagos Agege Missionary Service
-        </p>
+        <p>&copy; 2024 Called To Serve</p>
       </div>
     </footer>
   </div>
-    <!--FOOTER ENDS-->
+  <!--FOOTER ENDS-->
 </body>
 
 </html>

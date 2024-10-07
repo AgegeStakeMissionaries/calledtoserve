@@ -11,7 +11,7 @@ console.log("CLICKED!!!!!!!!!!");
 // Show the modal card after 7 seconds
 setTimeout(() => {
   document.querySelector("#ads").style.display = "block";
-}, 5000);
+}, 10000);
 
 // Hide the card when the exit button is clicked
 document.querySelector(".exit").addEventListener("click", () => {

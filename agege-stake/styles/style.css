@@ -198,6 +198,10 @@ h3 {
   align-items: center;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.801);
 }
+.missionaries_card a{
+  text-decoration: underline;
+  cursor: pointer;
+}
 .view {
   padding: 10px;
   color: #fff;
@@ -238,15 +242,11 @@ footer {
   display: flex;
   align-items: center;
   padding: 10px;
+  justify-content: center;
 }
 .footer-logo-div img {
   width: 10%;
 }
-/* .footer .logo-img{
-  width: 25%;
-  height: auto;
-  margin-right: 10px;
-} */
 @keyframes slideIn {
   from {
     opacity: 0;

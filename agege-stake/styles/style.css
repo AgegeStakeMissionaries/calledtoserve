@@ -247,6 +247,18 @@ footer {
 .footer-logo-div img {
   width: 10%;
 }
+
+.carousel-img{
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items:center;
+  justify-content: center;
+}
+.carousel-img img{
+  width: 250px;
+}
 @keyframes slideIn {
   from {
     opacity: 0;

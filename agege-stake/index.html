@@ -26,9 +26,11 @@
   <link rel="stylesheet" href="styles/style.css">
   <link rel="stylesheet" href="styles/screen.css">
   <link rel="stylesheet" href="styles/load.css">
+  <link rel="stylesheet" href="styles/ads.css">
   <script src="scripts/test-users.js" defer></script>
   <script src="scripts/main.js" defer></script>
   <script src="scripts/load.js" defer></script>
+  <script src="scripts/ads.js" defer></script>
 </head>
 
 <body>
@@ -49,6 +51,7 @@
           <h1>💪</h1>
         </div>
       </div>
+      <h3 class="h1-sub" style="text-decoration: underline;">Connecting Missionaries, Sharing Experience.</h3>
       <h2>Agege Stake Missionary Hub</h2>
       <a href="https://calledtoserve.vercel.app/agege-stake/index.html">calledtoserve.com</a>
       <nav>
@@ -69,14 +72,37 @@
     <!-- Carousel images start -->
     <img src="image/group-photo.webp" loading="lazy" alt="Group-Photograph" class="group-pic">
     <div class="text-box">
-      <h2>Your Missionary Purpose</h2>
+      <h2>Our Missionary Purpose</h2>
       <h3>To invite others to come unto christ by helping them recieve the restored gospel through faith in Jesus
         Christ and His Atonement, repentance, baptism, recieving the gift of the Holy Ghost, and enduring till the
         end.</h3>
     </div>
     <img src="image/prep-class.jpeg" loading="lazy" class="group-pic" alt="MissionPrep class">
-
-    <!-- MAIN IMAGE BODY ENDS -->
+    <!-- ADS WOULD LOAD AFTER 5s -->
+    <div class="card" style="display: none;">
+      <div class="text-content">
+        <h1 class="card-heading">Need Items For Mission But Dont Know Where To Get Them?</h1>
+        <p>Check out the official Missionaries website <a
+            href="https://www.amazon.com/shop/missionariesworldwide?ref_=cm_sw_r_cp_mwn_aipsfshop_aipsfmissionariesworldwide_684EBCJDZ6BQFT8SH4G2_1&language=en_US"
+            class="card-link">Click Here?</a>
+        </p>
+        <p class="card-content">
+          "Explore Missionaries Worldwide on Amazon! Find essential tools and resources to support missionaries in
+          their journey
+          of faith and service. From inspiring books to practical supplies, we've got everything you need. Click
+          the link to
+          discover more and enhance your mission experience today!"
+        </p>
+        <a href="https://www.amazon.com/shop/missionariesworldwide?ref_=cm_sw_r_cp_mwn_aipsfshop_aipsfmissionariesworldwide_684EBCJDZ6BQFT8SH4G2_1&language=en_US"
+          class="card-link">Click Here?</a>
+        <button class="exit-btn">
+          <svg fill="none" viewBox="0 0 15 15" height="15" width="15">
+            <path stroke-linecap="round" stroke-width="2" stroke="black" d="M1 14L14 1"></path>
+            <path stroke-linecap="round" stroke-width="2" stroke="black" d="M1 1L14 14"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
     <!-- Missionary quotes start -->
     <div class="quotes">
       <section class="hidden">
@@ -101,6 +127,18 @@
       <button title="View All" class="view"><strong>+ View All</strong></button>
     </a>
     </section>
+    <div id="box-card">
+      <div class="modal-card" id="ads" style="display: none;">
+        <h2>Missionaries Worldwide</h2>
+        <p>Explore essential tools and resources to support missionaries in their journey of faith and service. From
+          inspiring books to practical supplies, we've got everything you need.</p>
+        <a href="https://www.amazon.com/shop/missionariesworldwide?ref_=cm_sw_r_cp_mwn_aipsfshop_aipsfmissionariesworldwide_684EBCJDZ6BQFT8SH4G2_1&language=en_US"
+          target="_blank" class="btn">Visit Shop</a>
+        <button type="button" class="exit">
+          X
+        </button>
+      </div>
+    </div>
 </body>
 
 <!--FOOTER STARTS-->

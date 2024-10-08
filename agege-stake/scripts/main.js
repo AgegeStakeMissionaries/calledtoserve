@@ -184,6 +184,12 @@ const quotes = [
     backgroundColor: "#FFFFFF",
   },
   {
+    scriptureOrAuthor: "Elder Dieter F. Uchtdorf",
+    quote: "For members of the Church, education is not merely a good idea – its a commandment",
+    color: "#00a",
+    backgroundColor: "#FFFFFF",
+  },
+  {
     scriptureOrAuthor: "Helaman 5:12",
     quote:
       "And now, my sons, remember, remember that it is upon the rock of our Redeemer...",

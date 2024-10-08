@@ -1,0 +1,52 @@
+/* tab screen */
+@media only screen and (min-width: 526px) and (max-width: 900px) {
+  h1 {
+    font-size: 2rem;
+  }
+  .head-div {
+    flex-direction: row;
+  }
+  .head-txt {
+    display: flex;
+    align-items: center;
+  }
+  a {
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  nav {
+    background-color: transparent;
+    background-color: #14417c;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-evenly;
+    transition: none;
+  }
+  nav a {
+    color: #ffffff;
+    cursor: pointer;
+  }
+}
+/* Largest screen pc */
+@media only screen and (min-width: 900px) {
+  .head-div {
+    flex-direction: row;
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  nav {
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    background-color: #14417c;
+    justify-content: space-evenly;
+  }
+}

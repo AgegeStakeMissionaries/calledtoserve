@@ -24,8 +24,8 @@ fetch("missionaries.json")
               <h3>Departure Date: ${missionary.departureDate}</h3>
               <h3>Mission: ${missionary.mission}</h3>
               <h3>Mail:</h3>
-              <a style="display:none;" href="mailto:${missionary.mail}" style="font-size: 0.75rem;">
-                    <h4>${missionary.mail}</h4>
+              <a href="mailto:${missionary.mail}" style="font-size: 0.75rem;">
+                <h4>${missionary.mail}</h4>
                 </a>
                <a style=text-decoration="underline;" ></a>
               <button style="display:none;" class="button open-button">More</button>

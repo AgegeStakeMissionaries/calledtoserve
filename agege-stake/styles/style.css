@@ -255,6 +255,7 @@ footer {
   flex-wrap: wrap;
   align-items:center;
   justify-content: center;
+  margin: 2.75rem 0;
 }
 .carousel-img img{
   width: 250px;

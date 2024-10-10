@@ -4,5 +4,4 @@ setInterval(() => {
   img[currentIndex].style.display = "none";
   currentIndex = (currentIndex + 1) % img.length;
   img[currentIndex].style.display = "block";
-  img[currentIndex].style.transition = "1s, ease-in";
 }, 5000);

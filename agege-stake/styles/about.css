@@ -295,12 +295,10 @@
   align-items: center;
   justify-content: center;
   margin: 2.75rem 0;
-  border-radius: 10px;
 }
 .carousel-img img {
   position: relative;
   top: 0;
-  border-radius: 10px;
 
   left: 0;
   width: 100%;
@@ -312,5 +310,4 @@
 .carousel-img img:first-child {
   display: block;
   transition: ease-in 1s;
-  border-radius: 10px;
 }

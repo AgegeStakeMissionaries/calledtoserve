@@ -13,14 +13,56 @@
   /* Ensures it's in front of the backdrop */
   text-align: center;
 }
+#chat-card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  padding: 1rem;
+  background-image: url(../image/prep-class.jpeg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+#chat-card::before{
+  filter: blur(1px);
+  opacity: 0.5px;
+  border-radius: 10px;
+  /* z-index: -1; */
 
-.modal-card h2 {
+}
+.chat-modal-card{
+  padding: 1rem;
+  color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 1px, 1px, 0.3);
+  width: 350px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  text-align: center;
+}
+.chat-modal-card h2{
+  
+}
+.modal-card h2, .chat-modal-card h2 {
   font-size: 1.5em;
   text-decoration: underline;
   margin-bottom: 10px;
 }
+.chat-modal-card p{
+  background-color: rgba(52, 76, 126, 0.651);
+  padding: 20px;
+  font-weight: 900;
+  font-size: 20px;
+  border-radius: 10px;
+}
 
-.modal-card p {
+.modal-card p, .chat-modal-card p {
   margin-bottom: 15px;
 }
 
@@ -32,9 +74,23 @@
   text-decoration: none;
   border-radius: 5px;
 }
-
+.chat-btn{
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: white;
+  color: rgb(38, 36, 165);
+  text-decoration: none;
+  border-radius: 5px;
+}
+.chat-btn:hover {
+  background-color: #005bb5;
+  color: #fff;
+  transition: .6s ease-in;
+  font-weight: 900;
+}
 .btn:hover {
   background-color: #005bb5;
+  font-weight: 900;
 }
 .exit{
   position: absolute;

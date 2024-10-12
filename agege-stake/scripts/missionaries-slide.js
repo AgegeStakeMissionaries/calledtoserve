@@ -1,10 +1,9 @@
-
 fetch("missionaries.json")
-.then((response) => response.json())
-.then((data) => {
-  console.table(data);
-  const missionariesList = document.getElementById("missionariesList");
-  missionariesList.innerHTML = "";
+  .then((response) => response.json())
+  .then((data) => {
+    console.table(data);
+    const missionariesList = document.getElementById("missionariesList");
+    missionariesList.innerHTML = "";
     // const missionaries = data;
     let index = 0;
     // Create image elements for each missionary
@@ -20,12 +19,17 @@ fetch("missionaries.json")
       img.src = `${missionary.image}`;
       img.alt = missionary.name;
       img.style.height = "350px";
-      img.style.width = "100%"
+      img.style.width = "100%";
       img.classList.add("missionary-card");
 
       const caption = document.createElement("div");
       caption.classList.add("caption");
-      caption.textContent = missionary.name;
+      caption.innerHTML = `
+      <h4>${missionary.name}</h4>
+      <h4>${missionary.mission}</h4>
+      
+      `;
+      // caption.textContent = missionary.mission;
 
       slide.appendChild(img);
       slide.appendChild(caption);
@@ -40,7 +44,7 @@ fetch("missionaries.json")
       slides[index].style.display = "none"; // Hide the current slide
       index = (index + 1) % slides.length; // Increment index
       slides[index].style.display = "block";
-      slides[index].style.heigth = "300px" // Show the next slide
+      slides[index].style.heigth = "300px"; // Show the next slide
     }
 
     // Change image every 3 seconds

@@ -1,0 +1,29 @@
+.slideshow-container {
+  /* position: relative; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  margin: auto;
+}
+
+.slide {
+  /* display: none; */
+  text-align: center;
+}
+missionary-card{
+  width: 100%;
+  height: fit-content;
+}
+.missionary-img {
+  width: 100%;
+  height: 400px;
+  max-width: 600px;
+  margin: auto;
+}
+
+.caption {
+  font-size: 1.2rem;
+  color: #333;
+  margin-top: 8px;
+}

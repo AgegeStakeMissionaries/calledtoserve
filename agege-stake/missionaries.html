@@ -32,6 +32,7 @@
   <script src="scripts/main.js" defer></script>
   <script src="scripts/load.js" defer></script>
   <script src="scripts/ads.js" defer></script>
+  <script src="scripts/error-modal.js" defer></script>
 </head>
 
 <body>
@@ -102,13 +103,40 @@
         </button>
       </div>
     </div>
-    <a href="missionaries.html">
-      <button type="button" class="view"><strong>View All</strong></button>
+    <a href="javascript:void(0);" onclick="showModal()">
+      <button title="View All" class="view">
+        <strong>+ Add</strong>
+      </button>
     </a>
-    <a href="about.html">
-      <button type="button" class="view"><strong>+ Add Misionaries</strong></button>
-    </a>
-    <!--FOOTER STARTS-->
+    <div id="errorModal" class="col-lg-12 col-md-12 modal" style="display: none;">
+      <div class="col-md-6 modal-content">
+        <span class="close" onclick="closeModal()">❌</span>
+        <div class="error">Error!</div>
+        <p>Please you do not have access to carry out this function.</p>
+        <p>Contact the number/email-address below to get this done.</p>
+        <div class="contact-info">
+          <span>
+            <a href="https://wa.me/1234567890" target="_blank">
+              <i class="bi bi-telephone-forward icon"></i>WhatsApp +234 701
+              972 2577
+              <span class="bi bi-arrow-right arrow">Or</span>
+            </a>
+            <br>
+            <a href="tel:+23480000000" target="_blank">
+              <i class="bi bi-telephone-forward icon"></i> Call +234 701 972
+              2577
+              <span class="bi bi-arrow-right arrow">Or</span>
+              <br>
+            </a>
+          </span>
+          <a href="mailto: olamideadedayo@gmail.com" target="_blank">
+            <span><i class="bi bi-envelope-at icon"></i>
+              olamideadedayo@gmail.com</span>
+          </a>
+        </div>
+      </div>
+    </div>
+      <!--FOOTER STARTS-->
     <footer>
       <p>Follow us on social media:</p>
       <div class="footer-logo-div">

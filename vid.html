@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Play Video</title>
+    <style>
+        /* Just for demo, to simulate scrolling */
+        .spacer {
+            height: 1000px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Some space to scroll -->
+    <div class="spacer"></div>
+
+    <!-- Video Element -->
+    <video id="myVideo" width="640" height="360" controls muted>
+        <source src="agege-stake/image/2014-03-002-a-work-of-love-720p-eng.mp4"   type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- More space to scroll -->
+    <div class="spacer"></div>
+
+    <script src="autoplay.js"></script>
+
+</body>
+<script>
+    // Select the video element
+        const video = document.getElementById('myVideo');
+
+        // Create an Intersection Observer
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                // Check if the video is in view
+                if (entry.isIntersecting) {
+                    video.play();  // Play the video when it becomes visible
+                } else {
+                    video.pause();  // Pause the video when it's out of view
+                }
+            });
+        }, {
+            threshold: 0.5  // 50% of the video needs to be visible
+        });
+
+        // Observe the video element
+        observer.observe(video);
+
+</script>
+
+</html>

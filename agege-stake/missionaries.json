@@ -4,14 +4,16 @@
     "departureDate": "15-04-2024",
     "mission": "Cape Verde Mission",
     "image":"image/ogoanoh.jpg",
-    "gender": "him"
+    "gender": "him",
+    "mail": "desmond.ogboanoh@missionary.org"
   },
   {
     "name": "Sister Victoria Inyang",
     "departureDate": "03-2025",
     "gender": "her",
     "mission": "Phillipines Mission",
-    "image": "image/favour-inyang.webp"
+    "image": "image/favour-inyang.webp",
+    "mail": "victoria.inyang@misionary.org"
     },
   {
     "name": "Elder Israel Oyeyemi",
@@ -26,6 +28,7 @@
     "departureDate": "21-12-2024",
     "mission": "Nigeria Calabar Mission",
     "image": "./image/Victor.jpg",
+    "mail":"victor.friday-etuk@missionary.",
     "gender": "him"
   },
   {
@@ -33,12 +36,14 @@
     "departureDate": "21-11-2024",
     "mission": "Nigeria Enugu Mission",
     "image": "image/sister-ayomide.jpg",
+    "mail":"ijitola.ayomide@missionary.org",
     "gender": "her"
   },
   {
     "name": "Elder Josiah J. Kefas",
     "departureDate": "21-01-2025",
     "mission": "Nigeria Uyo Mission",
+    "mail":"josiah.kefas@missionary.org",
     "gender": "him",
     "image": "image/kefas-close-2.jpg"
   },
@@ -46,6 +51,7 @@
     "name": "Sister Favour Etuk",
     "departureDate": "27-03-2025",
     "mission": "Nigeria Abuja Mission",
+    "mail":"favour.friday-etuk@missionary.org",
     "image": "image/favour-etuk.jpg",
     "gender": "her"
   }

@@ -1,29 +1,38 @@
+
+
 .slideshow-container {
-  /* position: relative; */
+  position: relative;
+  width: 300px;
+  /* max-width: 800px; */
+  margin: auto;
+  overflow: hidden;
+  background-color: #ffffff;
   display: flex;
   align-items: center;
+  flex-direction: column;
   justify-content: center;
-  max-width: 100%;
-  margin: auto;
+  padding-bottom: 1rem;
 }
 
 .slide {
   /* display: none; */
+  display: flex;
+  justify-content: center;
   text-align: center;
 }
-missionary-card{
-  width: 100%;
-  height: fit-content;
-}
-.missionary-img {
-  width: 100%;
-  height: 400px;
-  max-width: 600px;
+
+.missionary-card {
+  width: 300px;
+  /* max-width: 450px; */
+  height: auto;
   margin: auto;
+  display: block;
 }
 
 .caption {
-  font-size: 1.2rem;
-  color: #333;
-  margin-top: 8px;
+  font-size: 1.25rem;
+  color: #1b1a1a;
+  margin-top: 10px;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
 }

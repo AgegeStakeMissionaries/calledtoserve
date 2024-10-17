@@ -263,5 +263,5 @@ function displayRandomQuotes() {
   document.querySelector("#scripture").style.color =
     randomQuote.backgroundColor;
 }
-setInterval(displayRandomQuotes, 10000);
+setInterval(displayRandomQuotes, 9000);
 window.onload = displayRandomQuotes;
